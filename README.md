@@ -1,119 +1,85 @@
-# Databricks Apps 监控
+# Databricks Keep-Alive Workers 部署说明
 
-通过 GitHub Actions 定时监控 ARGO 隧道状态和 Databricks Apps，自动重启停止的 Apps，并通过 Telegram 发送通知。
+这个 Worker 脚本用于监控和自动重启 Databricks App，确保它们保持运行状态。
 
-## 功能
+Databricks部署节点视频教程：https://youtu.be/r35kK77PlLg
 
-- **智能检查**：优先检查 ARGO 域名状态，仅在 ARGO 离线时才调用 Databricks API（减少 API 调用）
-- **自动重启**：检测到 ARGO 离线后，自动检查并重启停止的 Databricks Apps
-- **状态变化通知**：ARGO 离线/恢复、App 启动成功/失败时发送 Telegram 通知
-- **持久化状态**：通过 GitHub Actions Cache 保存 ARGO 状态，实现跨次运行的状态变化检测
-- **手动操作**：支持通过 GitHub Actions 手动触发各种操作
+## 部署指南
 
-## 快速开始
+### 1. 准备工作
 
-### 1. Fork 或创建仓库
+在部署之前，你需要获取以下信息：
+1. **Argo 固定隧道域名**: 自己在cloudflare zero trust里创建的
+2. **Databricks 工作区 Host**: 例如 `https://abc-123456789.cloud.databricks.com`
+3. **Databricks 访问 Token**: 用于 API 访问的个人访问令牌，点击右上角用户设置-选择"Developer" -> "Access Tokens"生成新的访问令牌
+4. **(可选) Telegram BOT Token**: 用于发送通知的 Telegram Bot 令牌
+5. **(可选) Telegram Chat ID**: 接收通知的聊天caht id
 
-将 `databricks-monitor` 目录的内容推送到一个新的 GitHub 仓库。
+### 2. 部署
+1. 登录你的cloudflare，创建一个新的workers，名称随意，编辑代码，删除原示例代码
+2. 打开此项目的_worker.js文件，复制代码粘贴到workers代码框中，部署
+3. 设置cron触发器，3分钟或5分钟
 
-### 2. 配置 GitHub Secrets
+### 3. 配置变量
 
-在仓库的 **Settings → Secrets and variables → Actions** 中添加以下 Secrets：
+有两种方式配置必要的参数：
 
-| Secret 名称 | 必填 | 说明 |
-|---|---|---|
-| `DATABRICKS_HOST` | ✅ | Databricks 工作区地址，如 `https://abc-123.cloud.databricks.com` |
-| `DATABRICKS_TOKEN` | ✅ | Databricks Personal Access Token |
-| `ARGO_DOMAIN` | ✅ | ARGO 隧道域名，如 `databricks.argo.domain.com` |
-| `CHAT_ID` | ❌ | Telegram 聊天 ID（配置后启用通知） |
-| `BOT_TOKEN` | ❌ | Telegram 机器人 Token（配置后启用通知） |
+#### 方法一：修改代码中的默认配置（推荐用于测试）
 
-> 也可以直接在 `monitor.js` 的 `DEFAULT_CONFIG` 中填写默认值。
+在 [_worker.js](file:///c%3A/Users/Mr.wang/Desktop/Databricks-keepalive-workers-main/_worker.js) 文件中找到 `DEFAULT_CONFIG` 对象并修改：
 
-### 3. 启用 GitHub Actions
+#### 方法二：使用环境变量（推荐用于生产环境）
 
-推送代码后，Actions 会自动按 cron 计划执行。也可以手动触发。
+在部署平台设置以下环境变量：
+- `ARGO_DOMAIN`: 节点的固定隧道域名
+- `DATABRICKS_HOST`: Databricks 工作区地址
+- `DATABRICKS_TOKEN`: Databricks 访问令牌
+- `CHAT_ID`: Telegram 聊天 ID（可选）
+- `BOT_TOKEN`: Telegram Bot 令牌（可选）
 
-## 操作说明
+### 3. 部署到 Cloudflare Workers
 
-### 自动定时执行
+## 使用说明
 
-默认每 **10 分钟** 执行一次智能检查（`check`）。
+部署完成后，你可以通过以下方式使用：
 
-可在 `.github/workflows/monitor.yml` 中修改 cron 表达式：
+### Web 管理界面
 
-```yaml
-schedule:
-  - cron: '*/10 * * * *'  # 每 10 分钟
-```
+访问 Worker 的根路径 `/` 可以打开 Web 管理界面，提供以下功能：
 
-### 手动触发
+### API 端点
 
-在 GitHub 仓库页面 → **Actions** → **Databricks Apps 监控** → **Run workflow**，选择操作类型：
+- `GET /status` - 获取当前所有 Apps 的状态
+- `GET /check` - 检查检查app状态，若暂停自动启动
+- `POST /start` - 手动启动所有停止的 Apps
+- `GET /config` - 查看当前配置信息
+- `POST /test-notification` - 测试 Telegram 通知
 
-| 操作 | 说明 |
-|---|---|
-| `check` | 智能检查（ARGO 优先，离线时检查 Databricks） |
-| `status` | 仅获取并打印 Apps 状态 |
-| `start` | 启动所有停止的 Apps |
-| `test-notify` | 发送测试通知到 Telegram |
+## Telegram 通知配置
 
-### 本地运行
+要启用 Telegram 通知，需要：
 
-```bash
-# 安装依赖（无外部依赖）
-npm install
+1. 创建一个 Telegram Bot:
+   - 在 Telegram 中搜索 @BotFather
+   - 发送 `/newbot` 命令
+   - 按照指示创建新 Bot 并获取令牌
 
-# 设置环境变量后运行
-export DATABRICKS_HOST="https://your-workspace.cloud.databricks.com"
-export DATABRICKS_TOKEN="dapi..."
-export ARGO_DOMAIN="your.argo.domain.com"
+2. 获取 Chat ID:
+   - 访问 `https://t.me/laowang_serv00_bot`
+   - 发送 `/start` 命令获取你的 chat_id
 
-# 执行不同操作
-npm run check        # 智能检查
-npm run status       # 查看状态
-npm run start        # 启动停止的 Apps
-npm run test-notify  # 测试 Telegram 通知
-```
+3. 在配置中设置 BOT_TOKEN 和 CHAT_ID
 
-## 监控逻辑
+## 故障排除
 
-```
-定时触发 (每10分钟)
-    │
-    ▼
-检查 ARGO 域名状态
-    │
-    ├── 在线 (404/502) → 记录状态，结束
-    │       │
-    │       └── 若从离线恢复 → 发送恢复通知
-    │
-    └── 离线 (其他状态码/连接失败)
-            │
-            ├── 状态变化 → 发送离线通知
-            │
-            └── 调用 Databricks API 检查 Apps
-                    │
-                    ├── ACTIVE → 跳过
-                    └── STOPPED → 自动重启 + 发送通知
-```
+### Apps 未自动启动
 
-## 项目结构
+1. 检查 DATABRICKS_HOST 和 DATABRICKS_TOKEN 是否正确配置
+2. 确认 Token 具有足够权限
+3. 检查 Worker 日志以获取更多信息
 
-```
-databricks-monitor/
-├── .github/
-│   └── workflows/
-│       └── monitor.yml      # GitHub Actions 工作流配置
-├── monitor.js               # 监控脚本主逻辑
-├── package.json
-├── .gitignore
-└── README.md
-```
+### Telegram 通知未发送
 
-## 注意事项
-
-- GitHub Actions 免费额度：公开仓库无限，私有仓库每月 2000 分钟
-- 每 10 分钟触发一次，每月约 4320 次（每次约 10-30 秒）
-- ARGO 正常时不调用 Databricks API，节省配额
-- GitHub Actions 的 cron 可能有 1-5 分钟的延迟，这是正常现象
+1. 确认 BOT_TOKEN 和 CHAT_ID 已正确配置
+2. 验证 Bot 是否有向指定 Chat ID 发送消息的权限
+3. 使用 `/test-notification` 端点测试通知功能
