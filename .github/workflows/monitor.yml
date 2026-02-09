@@ -1,0 +1,106 @@
+name: Databricks Apps 监控
+
+on:
+  # 定时触发：每 10 分钟检查一次
+  schedule:
+    - cron: '*/10 * * * *'
+
+  # 手动触发，支持选择操作类型
+  workflow_dispatch:
+    inputs:
+      action:
+        description: '操作类型'
+        required: true
+        default: 'check'
+        type: choice
+        options:
+          - check        # 智能检查（ARGO优先）
+          - status       # 仅获取 Apps 状态
+          - start        # 启动所有停止的 Apps
+          - test-notify  # 测试 Telegram 通知
+
+env:
+  NODE_VERSION: '20'
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    name: Databricks Apps 监控任务
+
+    steps:
+      - name: 签出代码
+        uses: actions/checkout@v4
+
+      - name: 设置 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: 安装依赖
+        run: npm ci
+
+      - name: 恢复 ARGO 状态缓存
+        id: restore-cache
+        uses: actions/cache/restore@v4
+        with:
+          path: .argo-status.json
+          key: argo-status-
+          restore-keys: |
+            argo-status-
+
+      - name: 执行监控脚本
+        id: monitor
+        env:
+          DATABRICKS_HOST: ${{ secrets.DATABRICKS_HOST }}
+          DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
+          ARGO_DOMAIN: ${{ secrets.ARGO_DOMAIN }}
+          CHAT_ID: ${{ secrets.CHAT_ID }}
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          # 定时任务默认 check，手动触发使用选择的操作
+          ACTION: ${{ github.event_name == 'schedule' && 'check' || github.event.inputs.action || 'check' }}
+        run: node monitor.js
+
+      - name: 保存 ARGO 状态缓存
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: .argo-status.json
+          key: argo-status-${{ github.run_id }}
+
+      # ====== Telegram 通知：工作流执行结果 ======
+      - name: 发送 Telegram 成功通知
+        if: success() && secrets.CHAT_ID != '' && secrets.BOT_TOKEN != ''
+        env:
+          CHAT_ID: ${{ secrets.CHAT_ID }}
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          ACTION: ${{ github.event_name == 'schedule' && 'check' || github.event.inputs.action || 'check' }}
+        run: |
+          TEXT="✅ <b>GitHub Actions 执行成功</b>%0A%0A"
+          TEXT+="📋 操作: <code>${ACTION}</code>%0A"
+          TEXT+="🔄 触发方式: <code>${{ github.event_name }}</code>%0A"
+          TEXT+="🏷️ 运行编号: <code>#${{ github.run_number }}</code>%0A"
+          TEXT+="⏰ 时间: $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')%0A%0A"
+          TEXT+="🔗 <a href='${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}'>查看日志</a>"
+
+          curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
+            -H "Content-Type: application/json" \
+            -d "{\"chat_id\":\"${CHAT_ID}\",\"text\":\"${TEXT}\",\"parse_mode\":\"HTML\",\"disable_web_page_preview\":true}"
+
+      - name: 发送 Telegram 失败通知
+        if: failure() && secrets.CHAT_ID != '' && secrets.BOT_TOKEN != ''
+        env:
+          CHAT_ID: ${{ secrets.CHAT_ID }}
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          ACTION: ${{ github.event_name == 'schedule' && 'check' || github.event.inputs.action || 'check' }}
+        run: |
+          TEXT="❌ <b>GitHub Actions 执行失败</b>%0A%0A"
+          TEXT+="📋 操作: <code>${ACTION}</code>%0A"
+          TEXT+="🔄 触发方式: <code>${{ github.event_name }}</code>%0A"
+          TEXT+="🏷️ 运行编号: <code>#${{ github.run_number }}</code>%0A"
+          TEXT+="⏰ 时间: $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')%0A%0A"
+          TEXT+="⚠️ 请检查日志排查问题%0A"
+          TEXT+="🔗 <a href='${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}'>查看日志</a>"
+
+          curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
+            -H "Content-Type: application/json" \
+            -d "{\"chat_id\":\"${CHAT_ID}\",\"text\":\"${TEXT}\",\"parse_mode\":\"HTML\",\"disable_web_page_preview\":true}"

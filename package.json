@@ -1,0 +1,20 @@
+{
+  "name": "databricks-monitor",
+  "version": "1.0.0",
+  "description": "Databricks Apps 监控 - 通过 GitHub Actions 定时检查 ARGO 隧道和 Databricks Apps 状态",
+  "type": "module",
+  "main": "monitor.js",
+  "scripts": {
+    "check": "ACTION=check node monitor.js",
+    "status": "ACTION=status node monitor.js",
+    "start": "ACTION=start node monitor.js",
+    "test-notify": "ACTION=test-notify node monitor.js"
+  },
+  "keywords": [
+    "databricks",
+    "monitor",
+    "argo",
+    "github-actions"
+  ],
+  "license": "MIT"
+}

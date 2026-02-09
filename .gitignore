@@ -1,0 +1,5 @@
+node_modules/
+.argo-status.json
+.DS_Store
+.env
+*.log
